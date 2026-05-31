@@ -1,0 +1,53 @@
+﻿PLS-VIP Özeti
+==================================================
+
+[chlorophyll] VIP>1: 210/520
+  ZTM_p75                      VIP=1.806
+  d1snv_R748                   VIP=1.805
+  d1snv_R751                   VIP=1.801
+  snv_R721                     VIP=1.791
+  snv_R718                     VIP=1.790
+  d1snv_R745                   VIP=1.785
+  snv_R715                     VIP=1.780
+  snv_R724                     VIP=1.775
+  d1snv_R754                   VIP=1.775
+  ZTM_mean                     VIP=1.768
+  d1snv_R742                   VIP=1.766
+  snv_R712                     VIP=1.763
+  d1snv_R739                   VIP=1.751
+  snv_R709                     VIP=1.740
+  snv_R727                     VIP=1.738
+
+[flavonol] VIP>1: 210/520
+  mARI_std                     VIP=1.976
+  FLAVI_std                    VIP=1.834
+  FRI_std                      VIP=1.794
+  NBI_std                      VIP=1.784
+  R410_p25                     VIP=1.773
+  WBI_std                      VIP=1.709
+  logNBI_std                   VIP=1.692
+  R800_std                     VIP=1.658
+  d1snv_R415                   VIP=1.623
+  CRI_p25                      VIP=1.605
+  ARI_std                      VIP=1.591
+  mARI_p75                     VIP=1.580
+  ARI_p75                      VIP=1.544
+  d1snv_R994                   VIP=1.536
+  FRI_x_NDRE_std               VIP=1.532
+
+[nbi] VIP>1: 195/520
+  ZTM_p75                      VIP=1.804
+  ZTM_std                      VIP=1.788
+  snv_R721                     VIP=1.786
+  snv_R718                     VIP=1.782
+  snv_R724                     VIP=1.778
+  snv_R715                     VIP=1.769
+  d1snv_R751                   VIP=1.761
+  d1snv_R748                   VIP=1.758
+  snv_R712                     VIP=1.751
+  d1snv_R745                   VIP=1.748
+  snv_R727                     VIP=1.747
+  d1snv_R754                   VIP=1.744
+  d1snv_R742                   VIP=1.733
+  snv_R709                     VIP=1.727
+  d1snv_R739                   VIP=1.720

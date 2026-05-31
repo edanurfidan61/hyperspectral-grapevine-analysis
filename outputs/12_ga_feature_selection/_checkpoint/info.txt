@@ -1,0 +1,3 @@
+gen_done=80
+best_r2=0.482337
+n_selected=60

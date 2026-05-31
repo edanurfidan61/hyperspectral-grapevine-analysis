@@ -1,0 +1,10 @@
+﻿code,task,model,target,n_features,metric,mean,std,bias_vs_biased
+F1,regression,pls,flavonol,151.0,R2,0.2406,0.1128,
+F2,regression,pls,flavonol,151.0,R2,0.5939,0.0553,
+F3,regression,lightgbm,flavonol,254.0,R2,0.4667,0.0513,
+F4,regression,pls,flavonol,45.0,R2,0.1446,0.4439,
+F5,classification,random_forest,stress,112.0,Macro_F1,0.7575,0.0839,
+F1n,regression,pls,flavonol,205.2,R2,0.2518,0.114,-0.0112
+F2n,regression,pls,flavonol,205.2,R2,0.2829,0.1934,0.311
+F3n,regression,lightgbm,flavonol,253.6,R2,0.3413,0.0757,0.1254
+F4n,regression,pls,flavonol,67.6,R2,0.1148,0.3361,0.0298

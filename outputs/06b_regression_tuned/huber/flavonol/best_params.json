@@ -1,0 +1,10 @@
+{
+  "best_params": {
+    "epsilon": 1.0,
+    "alpha": 0.0001
+  },
+  "cv_score": -0.005854830636688147,
+  "scoring": "r2",
+  "n_iter": 40,
+  "duration_s": 4.0
+}

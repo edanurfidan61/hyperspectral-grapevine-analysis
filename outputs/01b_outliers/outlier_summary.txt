@@ -1,0 +1,13 @@
+﻿Outlier Tespit Özeti
+==================================================
+Toplam örnek            : 204
+IsolationForest (cont=0.050): 11 outlier
+IQR Chl   (k=1.5)           : 0 outlier
+IQR Flav  (k=1.5)           : 2 outlier
+IQR NBI   (k=1.5)           : 1 outlier
+--------------------------------------------------
+Birleşik outlier        : 14 (6.9%)
+Korunan (clean) örnek   : 190
+action                  : warn
+
+outlier_mask.npy: True=tut, False=at

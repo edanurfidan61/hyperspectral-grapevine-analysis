@@ -1,0 +1,5 @@
+producer    : src/m04_features/ga_feature_selection.py
+config      : C:\bitirme_3\config\default.yaml
+git_sha     : (repo yok)
+timestamp   : 2026-05-31T06:19:50
+platform    : Windows-10-10.0.26200-SP0

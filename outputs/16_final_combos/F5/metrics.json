@@ -1,0 +1,46 @@
+{
+  "accuracy": 0.8088235294117647,
+  "balanced_accuracy": 0.7714285714285715,
+  "macro_precision": 0.793630816170862,
+  "macro_recall": 0.7714285714285715,
+  "macro_f1": 0.775665281627073,
+  "report": "                  precision    recall  f1-score   support\n\n        sağlıklı       0.80      0.93      0.86        40\n              FD       0.83      0.88      0.85        80\n   diğer biyotik       0.80      0.79      0.79        56\nabiyotik / diğer       0.74      0.50      0.60        28\n\n        accuracy                           0.81       204\n       macro avg       0.79      0.77      0.78       204\n    weighted avg       0.81      0.81      0.80       204\n",
+  "confusion_matrix": [
+    [
+      37,
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      70,
+      6,
+      3
+    ],
+    [
+      2,
+      8,
+      44,
+      2
+    ],
+    [
+      6,
+      5,
+      3,
+      14
+    ]
+  ],
+  "labels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "class_names": [
+    "sağlıklı",
+    "FD",
+    "diğer biyotik",
+    "abiyotik / diğer"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "best_params": {
+    "num_leaves": 31,
+    "n_estimators": 500,
+    "min_data_in_leaf": 20,
+    "learning_rate": 0.01,
+    "feature_fraction": 0.9
+  },
+  "cv_score": 0.3837019070757039,
+  "scoring": "r2",
+  "n_iter": 40,
+  "duration_s": 102.3
+}

@@ -1,0 +1,5 @@
+producer    : src/m04_features/rfe_selection.py
+config      : C:\bitirme_3\config\default.yaml
+git_sha     : (repo yok)
+timestamp   : 2026-05-31T05:26:20
+platform    : Windows-10-10.0.26200-SP0

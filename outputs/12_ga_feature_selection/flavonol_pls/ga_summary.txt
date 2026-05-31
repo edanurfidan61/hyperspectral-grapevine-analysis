@@ -1,0 +1,24 @@
+﻿GA Tabanlı Özellik Seçimi — Özet
+==================================================
+Hedef değişken     : flavonol
+Fitness modeli     : pls
+Popülasyon         : 150
+Nesil sayısı       : 150
+Toplam süre        : 65.3 sn (1.1 dk)
+
+Toplam özellik     : 520
+GA tarafından seçilen: 151 (29.0%)
+
+Karşılaştırma (5-fold CV):
+--------------------------------------------------
+      ridge  full R²=+0.325  → GA R²=+0.148  Δ=-0.178  (RPD: 1.22 → 1.08)
+         rf  full R²=+0.365  → GA R²=+0.356  Δ=-0.009  (RPD: 1.26 → 1.25)
+   lightgbm  full R²=+0.346  → GA R²=+0.348  Δ=+0.002  (RPD: 1.24 → 1.24)
+        pls  full R²=+0.241  → GA R²=+0.643  Δ=+0.402  (RPD: 1.15 → 1.67)
+  elasticnet  full R²=+0.328  → GA R²=+0.306  Δ=-0.022  (RPD: 1.22 → 1.20)
+        svr  full R²=+0.388  → GA R²=+0.404  Δ=+0.017  (RPD: 1.28 → 1.30)
+    xgboost  full R²=+0.374  → GA R²=+0.385  Δ=+0.011  (RPD: 1.26 → 1.28)
+--------------------------------------------------
+En iyi GA modeli   : pls (R²=0.643, RPD=1.67)
+
+Çıktılar           : C:\bitirme_3\outputs\12_ga_feature_selection\flavonol_pls

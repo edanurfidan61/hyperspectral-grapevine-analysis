@@ -1,0 +1,5 @@
+producer    : src/m07_ensemble/ensemble.py
+config      : C:\bitirme_3\config\default.yaml
+git_sha     : (repo yok)
+timestamp   : 2026-05-31T05:58:29
+platform    : Windows-10-10.0.26200-SP0

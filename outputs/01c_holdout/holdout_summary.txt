@@ -1,0 +1,18 @@
+﻿Train/Val/Test Holdout Özeti
+==================================================
+Toplam örnek         : 204
+Trainval (CV burada) : 163 (79.9%)
+Test (held-out)      : 41 (20.1%)
+Yöntem               : StratifiedGroupKFold(group=leaf, stratify=stress)
+Random state         : 42
+
+NOT: Test seti hiçbir CV/feature-selection/HPO aşamasında
+kullanılmamalıdır. Yalnızca final raporlama için açın.
+
+Sınıf dağılımı (y_stress):
+  sınıf 0: trainval= 32, test=  8
+  sınıf 1: trainval= 64, test= 16
+  sınıf 2: trainval= 45, test= 11
+  sınıf 3: trainval= 22, test=  6
+
+Group leakage kontrolü: YOK ✓

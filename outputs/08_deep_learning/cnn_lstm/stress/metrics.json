@@ -1,0 +1,46 @@
+{
+  "accuracy": 0.6829268292682927,
+  "balanced_accuracy": 0.6415719696969697,
+  "macro_precision": 0.6694444444444445,
+  "macro_recall": 0.6415719696969697,
+  "macro_f1": 0.6443326453388373,
+  "report": "                     precision    recall  f1-score   support\n\n           sağlıklı       0.78      0.88      0.82         8\n  flavescence dorée       0.65      0.81      0.72        16\ndiğer biyotik stres       0.75      0.55      0.63        11\n   abiyotik / diğer       0.50      0.33      0.40         6\n\n           accuracy                           0.68        41\n          macro avg       0.67      0.64      0.64        41\n       weighted avg       0.68      0.68      0.67        41\n",
+  "confusion_matrix": [
+    [
+      7,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      13,
+      2,
+      0
+    ],
+    [
+      1,
+      3,
+      6,
+      1
+    ],
+    [
+      0,
+      4,
+      0,
+      2
+    ]
+  ],
+  "labels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "class_names": [
+    "sağlıklı",
+    "flavescence dorée",
+    "diğer biyotik stres",
+    "abiyotik / diğer"
+  ]
+}

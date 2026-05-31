@@ -1,0 +1,53 @@
+﻿Birleşik Özellik Önem Özeti (Consensus)
+============================================================
+Kaynak sayısı       : 7
+Kaynaklar           : shap, rfe, ga_flavonol_lightgbm, ga_flavonol_pls, vip_chlorophyll, vip_flavonol, vip_nbi
+Toplam feature      : 520
+Top-N gösterilen    : 50
+
+En önemli 20 özellik (ortalama rank ile):
+------------------------------------------------------------
+  ZTM_std                                 ort.rank= 57.0  (görünüm: 6/7)
+  REP_p75                                 ort.rank= 74.6  (görünüm: 6/7)
+  CRI_p25                                 ort.rank= 76.1  (görünüm: 6/7)
+  snv_R727                     [727 nm]   ort.rank= 85.7  (görünüm: 7/7)
+  snv_R730                     [730 nm]   ort.rank= 89.9  (görünüm: 6/7)
+  ZTM_p75                                 ort.rank= 93.4  (görünüm: 6/7)
+  NBI_std                                 ort.rank= 96.0  (görünüm: 7/7)
+  ARI_p25                                 ort.rank= 97.4  (görünüm: 6/7)
+  R460_p25                     [460 nm]   ort.rank=102.1  (görünüm: 6/7)
+  snv_R724                     [724 nm]   ort.rank=107.4  (görünüm: 6/7)
+  mARI_mean                               ort.rank=109.7  (görünüm: 6/7)
+  ARI_mean                                ort.rank=110.4  (görünüm: 6/7)
+  mARI_std                                ort.rank=110.6  (görünüm: 5/7)
+  ARI_std                                 ort.rank=114.6  (görünüm: 5/7)
+  PRI_mean                                ort.rank=116.1  (görünüm: 6/7)
+  GNDVI_std                               ort.rank=117.4  (görünüm: 7/7)
+  R670_R460_p75                [670 nm]   ort.rank=118.0  (görünüm: 7/7)
+  snv_R733                     [733 nm]   ort.rank=119.4  (görünüm: 5/7)
+  d1snv_R700                   [700 nm]   ort.rank=120.9  (görünüm: 6/7)
+  PRI_p25                                 ort.rank=122.4  (görünüm: 6/7)
+------------------------------------------------------------
+
+En önemli 20 dalga boyu (sadece snv/d1 spektral bantlar):
+------------------------------------------------------------
+  727 nm  (snv_R727                    ) ort.rank= 85.7
+  730 nm  (snv_R730                    ) ort.rank= 89.9
+  724 nm  (snv_R724                    ) ort.rank=107.4
+  733 nm  (snv_R733                    ) ort.rank=119.4
+  700 nm  (d1snv_R700                  ) ort.rank=120.9
+  625 nm  (snv_R625                    ) ort.rank=127.9
+  616 nm  (snv_R616                    ) ort.rank=130.4
+  721 nm  (snv_R721                    ) ort.rank=133.3
+  715 nm  (snv_R715                    ) ort.rank=135.4
+  736 nm  (snv_R736                    ) ort.rank=136.1
+  694 nm  (d1snv_R694                  ) ort.rank=136.7
+  751 nm  (d1snv_R751                  ) ort.rank=140.4
+  739 nm  (snv_R739                    ) ort.rank=142.7
+  560 nm  (d1snv_R560                  ) ort.rank=142.9
+  634 nm  (snv_R634                    ) ort.rank=145.6
+  631 nm  (snv_R631                    ) ort.rank=145.7
+  554 nm  (d1snv_R554                  ) ort.rank=145.9
+  513 nm  (snv_R513                    ) ort.rank=145.9
+  757 nm  (d1snv_R757                  ) ort.rank=146.7
+  557 nm  (d1snv_R557                  ) ort.rank=148.6

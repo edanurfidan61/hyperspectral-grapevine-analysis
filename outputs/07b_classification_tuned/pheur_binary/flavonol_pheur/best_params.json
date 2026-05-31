@@ -1,0 +1,10 @@
+{
+  "best_params": {
+    "gamma": 0.01,
+    "C": 1
+  },
+  "cv_score": 0.7488648686348633,
+  "scoring": "f1_macro",
+  "n_iter": 40,
+  "duration_s": 0.5
+}

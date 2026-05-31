@@ -1,0 +1,11 @@
+attribute;category;type;description
+imageID;identifier;string;Image identifier
+directoryName;identifier;string;Directory name corresponding to a hyperspectral acquisition
+plotLocation;qualitative;string;The location of the plot where the leaf was collected. 
+acquisitionDate;date;date;The date corresponding to the hyperspectral acquisition
+collectionDate;date;date;The date of collection of the leaf from the vine plant
+variety;qualitative;string;The variety of the measured leaf
+symptom;qualitative;string;The symptom observed 
+Chl;quantitative;numeric;Chlorophyll (Chl) content measured using a Dualex (Force A) 
+Flav;quantitative;numeric;Flavonols (Flav) content measured using a Dualex (Force A) 
+NBI;quantitative;numeric;Nitrogen Balance Index (NBI), an indicator combining Chl and Flav

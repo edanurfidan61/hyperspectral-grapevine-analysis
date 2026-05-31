@@ -1,0 +1,10 @@
+{
+  "best_params": {
+    "n_components": 15
+  },
+  "cv_score": 0.3934981119655438,
+  "scoring": "r2",
+  "n_trials": 50,
+  "timeout_s": 600,
+  "duration_s": 1.4
+}

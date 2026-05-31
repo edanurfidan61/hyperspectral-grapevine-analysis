@@ -1,0 +1,205 @@
+imageID;directoryName;collectionDate;acquisitionDate;plotLocation;variety;symptom;Chl;Flav;NBI
+Fdga1;2020-09-10_003;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;13.059;3.736;3.5
+Fdga2;2020-09-10_004;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;11.519;3.946;2.92
+Fdga3;2020-09-10_005;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;15.52;3.826;4.06
+Fdga4;2020-09-10_006;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;11.545;3.172;3.64
+Fdga5;2020-09-10_007;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;10.011;3.968;2.52
+Fdga6;2020-09-10_008;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;15.046;3.686;4.08
+Fdga7;2020-09-10_009;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;10.799;3.243;3.33
+Fdga8;2020-09-10_010;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;12.477;4.157;3
+Fdga9;2020-09-10_011;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;19.362;3.175;6.1
+Fdga10;2020-09-10_012;10/09/2020;10/09/2020;Couffouleux;Gamay;flavescence dorée;11.585;3.126;3.71
+Okga1;2020-09-10_013;10/09/2020;10/09/2020;Couffouleux;Gamay;healthy;32.476;3.079;10.55
+Okga2;2020-09-10_014;10/09/2020;10/09/2020;Couffouleux;Gamay;healthy;19.7;3.454;5.7
+Okga3;2020-09-10_015;10/09/2020;10/09/2020;Couffouleux;Gamay;healthy;24.074;3.258;7.39
+Okga4;2020-09-10_016;10/09/2020;10/09/2020;Couffouleux;Gamay;healthy;25.855;3.755;6.89
+Okga5;2020-09-10_017;10/09/2020;10/09/2020;Couffouleux;Gamay;healthy;21.365;2.763;7.73
+Noga1;2020-09-10_018;10/09/2020;10/09/2020;Couffouleux;Gamay;water stress;18.601;3.532;5.27
+Noga2;2020-09-10_019;10/09/2020;10/09/2020;Couffouleux;Gamay;buffalo treehopper;15.699;3.254;4.82
+Noga3;2020-09-10_020;10/09/2020;10/09/2020;Couffouleux;Gamay;buffalo treehopper;14.978;3.56;4.21
+Noga4;2020-09-10_021;10/09/2020;10/09/2020;Couffouleux;Gamay;green leafhopper;19.495;3.451;5.65
+Noga5;2020-09-10_022;10/09/2020;10/09/2020;Couffouleux;Gamay;water stress;27.394;3.705;7.39
+Noga6;2020-09-10_023;10/09/2020;10/09/2020;Couffouleux;Gamay;green leafhopper;23.273;3.777;6.16
+Noga7;2020-09-10_024;10/09/2020;10/09/2020;Couffouleux;Gamay;wood diseases;7.983;3.418;2.34
+Noga8;2020-09-10_025;10/09/2020;10/09/2020;Couffouleux;Gamay;green leafhopper;19.099;3.516;5.43
+Noga9;2020-09-10_026;10/09/2020;10/09/2020;Couffouleux;Gamay;buffalo treehopper;31.67;3.539;8.95
+Noga10;2020-09-10_027;10/09/2020;10/09/2020;Couffouleux;Gamay;green leafhopper;19.982;3.402;5.87
+Fdfe1;2020-09-10_028;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;19.318;3.782;5.11
+Fdfe2;2020-09-10_029;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;12.452;3.844;3.24
+Fdfe3;2020-09-10_030;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;24.492;4.032;6.07
+Fdfe4;2020-09-10_031;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;25.115;4.45;5.64
+Fdfe5;2020-09-10_032;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;21.445;4.029;5.32
+Fdfe6;2020-09-10_033;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;24.807;4.105;6.04
+Fdfe7;2020-09-10_034;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;16.351;3.69;4.43
+Fdfe8;2020-09-10_035;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;21.16;4.01;5.28
+Fdfe9;2020-09-10_036;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;22.597;4.169;5.42
+Fdfe10;2020-09-10_037;10/09/2020;10/09/2020;Couffouleux;Fer;flavescence dorée;21.465;3.92;5.48
+Okfe1;2020-09-10_038;10/09/2020;10/09/2020;Couffouleux;Fer;healthy;34.279;3.349;10.23
+Okfe2;2020-09-10_039;10/09/2020;10/09/2020;Couffouleux;Fer;healthy;29.469;3.447;8.55
+Okfe3;2020-09-10_040;10/09/2020;10/09/2020;Couffouleux;Fer;healthy;34.241;3.013;11.37
+Okfe4;2020-09-10_041;10/09/2020;10/09/2020;Couffouleux;Fer;healthy;33.597;3.086;10.89
+Okfe5;2020-09-10_042;10/09/2020;10/09/2020;Couffouleux;Fer;healthy;33.6;3.479;9.66
+Nofe1;2020-09-10_043;10/09/2020;10/09/2020;Couffouleux;Fer;water stress;15.841;3.905;4.06
+Nofe2;2020-09-10_044;10/09/2020;10/09/2020;Couffouleux;Fer;buffalo treehopper;27.22;3.609;7.54
+Nofe3;2020-09-10_045;10/09/2020;10/09/2020;Couffouleux;Fer;water stress;6.423;3.294;1.95
+Nofe4;2020-09-10_046;10/09/2020;10/09/2020;Couffouleux;Fer;buffalo treehopper;24.893;3.141;7.93
+Nofe5;2020-09-10_047;10/09/2020;10/09/2020;Couffouleux;Fer;buffalo treehopper;32.861;3.649;9
+Nofe6;2020-09-10_048;10/09/2020;10/09/2020;Couffouleux;Fer;water stress;24.552;3.003;8.17
+Nofe7;2020-09-10_049;10/09/2020;10/09/2020;Couffouleux;Fer;wood diseases;25.627;3.973;6.45
+Nofe8;2020-09-10_050;10/09/2020;10/09/2020;Couffouleux;Fer;water stress;8.902;3.789;2.35
+Nofe9;2020-09-10_051;10/09/2020;10/09/2020;Couffouleux;Fer;green leafhopper;29.03;3.781;7.68
+Nofe10;2020-09-10_052;10/09/2020;10/09/2020;Couffouleux;Fer;water stress;14.966;4.118;3.63
+Fddu1;2020-09-10_053;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;16.116;3.815;4.22
+Fddu2;2020-09-10_054;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;18.375;2.83;6.49
+Fddu3;2020-09-10_055;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;14.227;3.473;4.1
+Fddu4;2020-09-10_056;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;10.007;4.211;2.38
+Fddu5;2020-09-10_057;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;11.067;3.737;2.96
+Fddu6;2020-09-10_058;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;16.282;3.774;4.31
+Fddu7;2020-09-10_059;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;9.666;3.833;2.52
+Fddu8;2020-09-10_060;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;11.245;4.151;2.71
+Fddu9;2020-09-10_061;10/09/2020;10/09/2020;Rabastens;Duras;flavescence dorée;9.282;3.925;2.36
+Okdu1;2020-09-10_062;10/09/2020;10/09/2020;Rabastens;Duras;healthy;34.091;3.567;9.56
+Okdu2;2020-09-10_063;10/09/2020;10/09/2020;Rabastens;Duras;healthy;23.312;4.186;5.57
+Okdu3;2020-09-10_064;10/09/2020;10/09/2020;Rabastens;Duras;healthy;32.232;3.542;9.1
+Nodu1;2020-09-10_065;10/09/2020;10/09/2020;Rabastens;Duras;water stress;5.543;4.328;1.28
+Nodu2;2020-09-10_066;10/09/2020;10/09/2020;Rabastens;Duras;buffalo treehopper;21.87;3.519;6.21
+Nodu3;2020-09-10_067;10/09/2020;10/09/2020;Rabastens;Duras;water stress;9.947;3.769;2.64
+Nodu4;2020-09-10_068;10/09/2020;10/09/2020;Rabastens;Duras;green leafhopper;16.227;4.015;4.04
+Nodu5;2020-09-10_069;10/09/2020;10/09/2020;Rabastens;Duras;buffalo treehopper;21.817;4.038;5.4
+Nodu6;2020-09-10_070;10/09/2020;10/09/2020;Rabastens;Duras;deficiency;3.563;3.21;1.11
+Nodu7;2020-09-10_071;10/09/2020;10/09/2020;Rabastens;Duras;buffalo treehopper;14.232;4.125;3.45
+Nodu8;2020-09-10_072;10/09/2020;10/09/2020;Rabastens;Duras;senescence;2.866;3.406;0.84
+Nodu9;2020-09-10_073;10/09/2020;10/09/2020;Rabastens;Duras;green leafhopper;17.422;3.781;4.61
+Nodu10;2020-09-10_074;10/09/2020;10/09/2020;Rabastens;Duras;green leafhopper;23.265;3.757;6.19
+Fdga11;2020-09-10_075;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;14.129;3.685;3.83
+Fdga12;2020-09-10_076;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;20.42;4.03;5.07
+Fdga13;2020-09-10_077;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;15.349;3.945;3.89
+Fdga14;2020-09-10_078;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;12.926;3.85;3.36
+Fdga15;2020-09-10_079;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;14.342;3.925;3.65
+Fdga16;2020-09-10_080;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;15.278;4.487;3.41
+Fdga17;2020-09-10_081;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;23.628;4.04;5.85
+Fdga18;2020-09-10_082;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;14.876;3.954;3.76
+Fdga19;2020-09-10_083;10/09/2020;10/09/2020;Rabastens;Gamay;flavescence dorée;19.049;4.038;4.72
+Okga6;2020-09-10_084;10/09/2020;10/09/2020;Rabastens;Gamay;healthy;32.44;3.644;8.9
+Okga7;2020-09-10_085;10/09/2020;10/09/2020;Rabastens;Gamay;healthy;13.449;2.635;5.1
+Okga8;2020-09-10_086;10/09/2020;10/09/2020;Rabastens;Gamay;healthy;37.513;3.997;9.39
+Okga9;2020-09-10_087;10/09/2020;10/09/2020;Rabastens;Gamay;healthy;20.877;3.338;6.25
+Okga10;2020-09-10_088;10/09/2020;10/09/2020;Rabastens;Gamay;healthy;23.176;4.262;5.44
+Okga11;2020-09-10_089;10/09/2020;10/09/2020;Rabastens;Gamay;healthy;33.68;4.072;8.27
+Noga11;2020-09-10_090;10/09/2020;10/09/2020;Rabastens;Gamay;water stress;30.615;3.379;9.06
+Noga12;2020-09-10_091;10/09/2020;10/09/2020;Rabastens;Gamay;water stress;12.973;2.799;4.63
+Noga13;2020-09-10_092;10/09/2020;10/09/2020;Rabastens;Gamay;buffalo treehopper;27.445;3.972;6.91
+Noga14;2020-09-10_093;10/09/2020;10/09/2020;Rabastens;Gamay;buffalo treehopper;21.908;3.986;5.5
+Noga15;2020-09-10_094;10/09/2020;10/09/2020;Rabastens;Gamay;water stress;16.588;3.505;4.73
+Noga16;2020-09-10_095;10/09/2020;10/09/2020;Rabastens;Gamay;buffalo treehopper;28.542;3.272;8.72
+Noga17;2020-09-10_096;10/09/2020;10/09/2020;Rabastens;Gamay;buffalo treehopper;14.073;2.957;4.76
+Noga18;2020-09-10_097;10/09/2020;10/09/2020;Rabastens;Gamay;water stress;6.647;4.335;1.53
+Noga19;2020-09-10_098;10/09/2020;10/09/2020;Rabastens;Gamay;green leafhopper;34.827;3.418;10.19
+Noga20;2020-09-10_099;10/09/2020;10/09/2020;Rabastens;Gamay;buffalo treehopper;23.037;4.062;5.67
+Fdco1;2020-09-10_101;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;12.903;3.415;3.78
+Fdco2;2020-09-10_102;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;18.397;3.431;5.36
+Fdco3;2020-09-10_103;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;17.23;3.353;5.14
+Fdco4;2020-09-10_104;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;13.151;3.26;4.03
+Fdco5;2020-09-10_105;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;15.877;3.805;4.17
+Fdco6;2020-09-10_106;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;19.367;3.272;5.92
+Fdco7;2020-09-10_107;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;18.124;2.812;6.45
+Fdco8;2020-09-10_109;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;18.078;3.895;4.64
+Fdco9;2020-09-10_110;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;25.945;3.14;8.26
+Fdco10;2020-09-10_111;10/09/2020;10/09/2020;Terral;Colombard;flavescence dorée;17.56;4.302;4.08
+Okco1;2020-09-10_112;10/09/2020;10/09/2020;Terral;Colombard;healthy;25.277;2.996;8.44
+Okco2;2020-09-10_113;10/09/2020;10/09/2020;Terral;Colombard;healthy;26.105;3.244;8.05
+Okco3;2020-09-10_114;10/09/2020;10/09/2020;Terral;Colombard;healthy;30.924;3.849;8.04
+Okco4;2020-09-10_115;10/09/2020;10/09/2020;Terral;Colombard;healthy;33.205;3.499;9.49
+Okco5;2020-09-10_116;10/09/2020;10/09/2020;Terral;Colombard;healthy;32.289;3.983;8.11
+Noco1;2020-09-10_117;10/09/2020;10/09/2020;Terral;Colombard;wood diseases;24.252;3.487;6.95
+Noco2;2020-09-10_118;10/09/2020;10/09/2020;Terral;Colombard;green leafhopper;29.515;2.087;14.14
+Noco3;2020-09-10_119;10/09/2020;10/09/2020;Terral;Colombard;green leafhopper;31.343;3.301;9.5
+Noco4;2020-09-10_120;10/09/2020;10/09/2020;Terral;Colombard;chlorosis;13.63;1.808;7.54
+Noco5;2020-09-10_121;10/09/2020;10/09/2020;Terral;Colombard;discoloration;30.079;3.01;9.99
+Noco6;2020-09-10_122;10/09/2020;10/09/2020;Terral;Colombard;wood diseases;21.756;4.029;5.4
+Noco7;2020-09-10_123;10/09/2020;10/09/2020;Terral;Colombard;wood diseases;15.252;3.272;4.66
+Noco8;2020-09-10_124;10/09/2020;10/09/2020;Terral;Colombard;wood diseases;25.768;3.194;8.07
+Fdll1;2020-09-11_001;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;14.421;3.448;4.18
+Fdll2;2020-09-11_002;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;24.087;3.452;6.98
+Fdll3;2020-09-11_003;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;16.478;2.493;6.61
+Fdll4;2020-09-11_004;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;27.984;2.865;9.77
+Fdll5;2020-09-11_005;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;14.369;4.004;3.59
+Fdll6;2020-09-11_006;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;10.765;2.935;3.67
+Fdll7;2020-09-11_007;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;18.623;3.07;6.07
+Fdll8;2020-09-11_008;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;16.12;2.376;6.78
+Fdll9;2020-09-11_009;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;19.557;2.854;6.85
+Fdll10;2020-09-11_010;11/09/2020;11/09/2020;DEVT;Loin de l'œil;flavescence dorée;8.309;1.311;6.34
+Fdmz1;2020-09-11_011;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;17.388;3.046;5.71
+Fdmz2;2020-09-11_012;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;12.251;3.247;3.77
+Fdmz3;2020-09-11_013;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;13.148;3.674;3.58
+Fdmz4;2020-09-11_014;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;17.501;2.99;5.85
+Fdmz5;2020-09-11_015;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;20.972;3.407;6.16
+Fdmz6;2020-09-11_016;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;20.321;2.432;8.36
+Fdmz7;2020-09-11_017;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;17.957;3.723;4.82
+Fdmz8;2020-09-11_018;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;24.18;3.066;7.89
+Fdmz9;2020-09-11_019;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;12.283;2.994;4.1
+Fdmz10;2020-09-11_020;11/09/2020;11/09/2020;DEVT;Mauzac;flavescence dorée;9.123;2;4.56
+Okll1;2020-09-14_002;14/09/2020;14/09/2020;DEVT;Loin de l'œil;damaged;29.484;2.688;10.97
+Okll2;2020-09-14_003;14/09/2020;14/09/2020;DEVT;Loin de l'œil;damaged;32.205;2.436;13.22
+Okll3;2020-09-14_004;14/09/2020;14/09/2020;DEVT;Loin de l'œil;damaged;40.206;3.008;13.37
+Okll4;2020-09-14_005;14/09/2020;14/09/2020;DEVT;Loin de l'œil;damaged;33.931;2.479;13.69
+Okll5;2020-09-14_006;14/09/2020;14/09/2020;DEVT;Loin de l'œil;damaged;37.644;3.098;12.15
+Noll1;2020-09-14_007;14/09/2020;14/09/2020;DEVT;Loin de l'œil;wood diseases;9.742;2.774;3.51
+Noll2;2020-09-14_008;14/09/2020;14/09/2020;DEVT;Loin de l'œil;wood diseases;12.48;2.461;5.07
+Noll3;2020-09-14_009;14/09/2020;14/09/2020;DEVT;Loin de l'œil;wood diseases;29.625;2.654;11.16
+Noll4;2020-09-14_010;14/09/2020;14/09/2020;DEVT;Loin de l'œil;green leafhopper;11.114;2.345;4.74
+Noll5;2020-09-14_011;14/09/2020;14/09/2020;DEVT;Loin de l'œil;green leafhopper;25.799;2.047;12.61
+Noll6;2020-09-14_012;14/09/2020;14/09/2020;DEVT;Loin de l'œil;green leafhopper;13.598;2.81;4.84
+Noll7;2020-09-14_013;14/09/2020;14/09/2020;DEVT;Loin de l'œil;green leafhopper;27.897;2.098;13.29
+Noll8;2020-09-14_014;14/09/2020;14/09/2020;DEVT;Loin de l'œil;senescence;19.341;3.039;6.36
+Noll9;2020-09-14_015;14/09/2020;14/09/2020;DEVT;Loin de l'œil;senescence;8.721;2.702;3.23
+Noll10;2020-09-14_016;14/09/2020;14/09/2020;DEVT;Loin de l'œil;senescence;6.156;2.175;2.83
+Okmz1;2020-09-14_017;14/09/2020;14/09/2020;DEVT;Mauzac;healthy;42.453;2.761;15.38
+Okmz2;2020-09-14_018;14/09/2020;14/09/2020;DEVT;Mauzac;healthy;27.02;3.02;8.95
+Okmz3;2020-09-14_019;14/09/2020;14/09/2020;DEVT;Mauzac;healthy;42.366;2.94;14.41
+Okmz4;2020-09-14_020;14/09/2020;14/09/2020;DEVT;Mauzac;healthy;36.258;2.901;12.5
+Okmz5;2020-09-14_021;14/09/2020;14/09/2020;DEVT;Mauzac;healthy;40.064;3.187;12.57
+Nomz1;2020-09-14_022;14/09/2020;14/09/2020;DEVT;Mauzac;buffalo treehopper;13.334;3.677;3.63
+Nomz2;2020-09-14_023;14/09/2020;14/09/2020;DEVT;Mauzac;buffalo treehopper;18.199;3.637;5
+Nomz3;2020-09-14_024;14/09/2020;14/09/2020;DEVT;Mauzac;buffalo treehopper;20.653;3.36;6.15
+Nomz4;2020-09-14_025;14/09/2020;14/09/2020;DEVT;Mauzac;mildew;28.477;2.721;10.47
+Nomz5;2020-09-14_026;14/09/2020;14/09/2020;DEVT;Mauzac;mildew;28.397;2.963;9.58
+Nomz6;2020-09-14_027;14/09/2020;14/09/2020;DEVT;Mauzac;wood diseases;6.65;2.926;2.27
+Nomz7;2020-09-14_028;14/09/2020;14/09/2020;DEVT;Mauzac;wood diseases;26.479;3.137;8.44
+Nomz8;2020-09-14_029;14/09/2020;14/09/2020;DEVT;Mauzac;green leafhopper;30.673;2.961;10.36
+Nomz9;2020-09-14_030;14/09/2020;14/09/2020;DEVT;Mauzac;senescence;5.13;2.931;1.75
+Nomz10;2020-09-14_031;14/09/2020;14/09/2020;DEVT;Mauzac;senescence;4.151;2.777;1.49
+Fdch1;2020-10-02_001;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;7.489;3.694;2.03
+Fdch2;2020-10-02_002;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;9.909;3.681;2.69
+Fdch3;2020-10-02_003;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;15.657;3.504;4.47
+Fdch4;2020-10-02_004;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;10.348;3.644;2.84
+Fdch5;2020-10-02_005;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;18.12;3.397;5.33
+Fdch6;2020-10-02_006;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;8.908;3.815;2.34
+Fdch7;2020-10-02_007;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;8.242;3.58;2.3
+Fdch8;2020-10-02_008;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;16.072;2.442;6.58
+Fdch9;2020-10-02_009;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;21.994;3.996;5.5
+Fdch10;2020-10-02_010;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;17.113;3.417;5.01
+Fdch11;2020-10-02_011;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;13.138;2.949;4.46
+Fdch12;2020-10-02_012;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;flavescence dorée;11.393;3.085;3.69
+Okch1;2020-10-02_013;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;31.448;2.807;11.2
+Okch2;2020-10-02_014;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;38.546;2.69;14.33
+Okch3;2020-10-02_015;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;39.086;3.72;10.51
+Okch4;2020-10-02_016;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;36.769;2.737;13.43
+Okch5;2020-10-02_017;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;39.624;2.843;13.94
+Okch6;2020-10-02_018;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;38.83;3.007;12.91
+Okch7;2020-10-02_019;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;43.007;3.08;13.96
+Okch8;2020-10-02_020;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;33.198;2.779;11.95
+Okch9;2020-10-02_021;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;34.804;2.56;13.59
+Okch10;2020-10-02_022;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;34.978;2.911;12.02
+Okch11;2020-10-02_023;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;healthy;36.127;3.511;10.29
+Noch1;2020-10-02_024;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;wood diseases;24.045;3.405;7.06
+Noch2;2020-10-02_025;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;wood diseases;16.247;3.569;4.55
+Noch3;2020-10-02_026;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;wood diseases;42.569;2.542;16.75
+Noch4;2020-10-02_027;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;wood diseases;9.121;3.222;2.83
+Noch5;2020-10-02_028;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;wood diseases;24.614;2.591;9.5
+Noch6;2020-10-02_029;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;wood diseases;30.121;3.022;9.97
+Noch7;2020-10-02_030;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;senescence;30.607;2.664;11.49
+Noch8;2020-10-02_031;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;green leafhopper;25.489;2.578;9.89
+Noch9;2020-10-02_032;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;green leafhopper;21.507;2.891;7.44
+Noch10;2020-10-02_033;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;green leafhopper;18.125;1.468;12.35
+Noch11;2020-10-02_034;01/10/2020;02/10/2020;LISLE SUR TARN;Chardonnay;green leafhopper;18.319;3.302;5.55

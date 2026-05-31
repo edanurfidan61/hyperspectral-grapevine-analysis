@@ -1,0 +1,93 @@
+﻿Aşama,Hedef,Model,R²,Accuracy,Balanced_Acc,Macro_F1,Precision,Recall,F1,RMSE,RPD,MAPE,MAE,Notlar
+06_Regresyon,Klorofil,random_forest,0.843,,,,,,,3.682,2.526,16.305,,"Non-lineer etkileşimler; ağaç-temelli, ölçek-bağımsız"
+06_Regresyon,Klorofil,stacking,0.841,,,,,,,3.713,2.505,16.108,,"Ridge+RF+LGBM → meta-Ridge, model çeşitliliğinden faydalanma"
+06_Regresyon,Klorofil,lightgbm,0.83,,,,,,,3.838,2.423,17.0,,Gradient boosting; rezidüellere odaklanarak iteratif iyileşme
+06_Regresyon,Klorofil,pls,0.799,,,,,,,4.171,2.23,20.734,,Spektroskopinin altın standardı; latent component bulur
+06_Regresyon,NBI,lightgbm,0.756,,,,,,,1.661,2.026,20.718,,Gradient boosting; rezidüellere odaklanarak iteratif iyileşme
+06_Regresyon,NBI,stacking,0.747,,,,,,,1.691,1.99,20.821,,"Ridge+RF+LGBM → meta-Ridge, model çeşitliliğinden faydalanma"
+06_Regresyon,NBI,random_forest,0.74,,,,,,,1.715,1.962,20.794,,"Non-lineer etkileşimler; ağaç-temelli, ölçek-bağımsız"
+06_Regresyon,Klorofil,ridge,0.711,,,,,,,5.002,1.86,25.231,,L2 düzenlemesi; spektral kolinerlik altında klasik baseline
+06_Regresyon,NBI,pls,0.69,,,,,,,1.874,1.795,28.878,,Spektroskopinin altın standardı; latent component bulur
+06_Regresyon,Klorofil,huber,0.589,,,,,,,5.962,1.56,32.49,,Outlier-dirençli lineer
+06_Regresyon,NBI,ridge,0.507,,,,,,,2.363,1.424,38.628,,L2 düzenlemesi; spektral kolinerlik altında klasik baseline
+06_Regresyon,Flavonol,stacking,0.398,,,,,,,0.446,1.289,11.508,,"Ridge+RF+LGBM → meta-Ridge, model çeşitliliğinden faydalanma"
+06_Regresyon,Flavonol,lightgbm,0.386,,,,,,,0.45,1.276,11.567,,Gradient boosting; rezidüellere odaklanarak iteratif iyileşme
+06_Regresyon,Flavonol,random_forest,0.361,,,,,,,0.459,1.251,11.744,,"Non-lineer etkileşimler; ağaç-temelli, ölçek-bağımsız"
+06_Regresyon,Flavonol,pls,0.296,,,,,,,0.482,1.192,11.944,,Spektroskopinin altın standardı; latent component bulur
+06_Regresyon,NBI,huber,0.031,,,,,,,3.311,1.016,57.29,,Outlier-dirençli lineer
+06_Regresyon,Flavonol,ridge,-0.024,,,,,,,0.581,0.988,14.096,,L2 düzenlemesi; spektral kolinerlik altında klasik baseline
+06_Regresyon,Flavonol,huber,-0.696,,,,,,,0.748,0.768,17.292,,Outlier-dirençli lineer
+06b_Regresyon_Tuned,Klorofil,pls,0.855,,,,,,,3.545,2.624,16.697,,
+06b_Regresyon_Tuned,Klorofil,random_forest,0.843,,,,,,,3.69,2.521,17.36,,
+06b_Regresyon_Tuned,Klorofil,lightgbm,0.841,,,,,,,3.709,2.508,17.461,,
+06b_Regresyon_Tuned,NBI,pls,0.764,,,,,,,1.633,2.06,23.31,,
+06b_Regresyon_Tuned,NBI,lightgbm,0.763,,,,,,,1.637,2.055,21.776,,
+06b_Regresyon_Tuned,NBI,random_forest,0.759,,,,,,,1.65,2.039,20.703,,
+06b_Regresyon_Tuned,Klorofil,huber,0.752,,,,,,,4.63,2.009,24.657,,
+06b_Regresyon_Tuned,Klorofil,ridge,0.69,,,,,,,5.183,1.795,27.378,,
+06b_Regresyon_Tuned,NBI,huber,0.505,,,,,,,2.367,1.421,38.784,,
+06b_Regresyon_Tuned,NBI,ridge,0.5,,,,,,,2.38,1.414,39.095,,
+06b_Regresyon_Tuned,Flavonol,lightgbm,0.39,,,,,,,0.449,1.28,11.757,,
+06b_Regresyon_Tuned,Flavonol,pls,0.38,,,,,,,0.452,1.27,11.363,,
+06b_Regresyon_Tuned,Flavonol,random_forest,0.37,,,,,,,0.456,1.26,11.697,,
+06b_Regresyon_Tuned,Flavonol,huber,0.217,,,,,,,0.508,1.13,12.208,,
+06b_Regresyon_Tuned,Flavonol,ridge,0.144,,,,,,,0.531,1.081,12.384,,
+07_Stres_Siniflandirma_SMOTE,Ph.Eur. Flavonol ≥3.5 (binary),pheur_binary,,0.775,0.764,0.766,0.772,0.764,0.766,,,,,
+07_Stres_Siniflandirma_SMOTE,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),stacking,,0.784,0.727,0.729,0.747,0.727,0.729,,,,,
+07_Stres_Siniflandirma_SMOTE,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),lightgbm,,0.77,0.724,0.721,0.728,0.724,0.721,,,,,
+07_Stres_Siniflandirma_SMOTE,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),pheur,,0.765,0.716,0.714,0.724,0.716,0.714,,,,,
+07_Stres_Siniflandirma_SMOTE,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),random_forest,,0.765,0.707,0.709,0.735,0.707,0.709,,,,,
+07b_Stres_Siniflandirma_Tuned,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),lightgbm,,0.804,0.762,0.769,0.786,0.762,0.769,,,,,
+07b_Stres_Siniflandirma_Tuned,Ph.Eur. Flavonol ≥3.5 (binary),pheur_binary,,0.765,0.746,0.751,0.769,0.746,0.751,,,,,
+07b_Stres_Siniflandirma_Tuned,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),random_forest,,0.745,0.704,0.706,0.715,0.704,0.706,,,,,
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),autoencoder,,0.854,0.84,0.839,0.843,0.84,0.839,,,,,Unsupervised pretrain; gürültüden temiz temsil
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),mlp,,0.805,0.786,0.778,0.777,0.786,0.778,,,,,En basit DL; spektral feature → dense
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),resnet1d,,0.756,0.729,0.76,0.838,0.729,0.76,,,,,Skip connection ile derin spektral öğrenme
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),cnn1d,,0.732,0.69,0.729,0.826,0.69,0.729,,,,,Lokal spektral patern öğrenme
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),cnn_lstm,,0.683,0.642,0.644,0.669,0.642,0.644,,,,,Lokal CNN + spektral sıra
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),transformer,,0.61,0.588,0.586,0.616,0.588,0.586,,,,,Self-attention ile bant etkileşimi
+08_Derin_Ogrenme,4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik),rnn,,0.366,0.315,0.279,0.254,0.315,0.279,,,,,Spektral sıra → ama bantlar gerçekten zaman değil
+09_Ordinal_Flavonol,Ordinal Flavonol (3cls),FrankHall(LogReg),,0.657,0.563,0.561,,,0.561,,,,0.348,QWK=0.502; 3cls sınıf şeması
+09_Ordinal_Flavonol,Ordinal Flavonol (3cls),RandomForest,,0.691,0.516,0.506,,,0.506,,,,0.314,QWK=0.508; 3cls sınıf şeması
+09_Ordinal_Flavonol,Ordinal Flavonol (3cls),LightGBM,,0.657,0.493,0.49,,,0.49,,,,0.353,QWK=0.469; 3cls sınıf şeması
+09_Ordinal_Flavonol,Ordinal Flavonol (4cls),FrankHall(LogReg),,0.647,0.38,0.383,,,0.383,,,,0.377,QWK=0.411; 4cls sınıf şeması
+09_Ordinal_Flavonol,Ordinal Flavonol (4cls),RandomForest,,0.696,0.376,0.363,,,0.363,,,,0.314,QWK=0.502; 4cls sınıf şeması
+09_Ordinal_Flavonol,Ordinal Flavonol (4cls),LightGBM,,0.623,0.336,0.331,,,0.331,,,,0.426,QWK=0.314; 4cls sınıf şeması
+10_Anomali_Tespiti,Ph.Eur. Anomali (Flavonol ≥3.5),isolation_forest,,,,,0.548,0.829,0.66,,,,,Ağaç tabanlı izolasyon — hızlı baseline
+10_Anomali_Tespiti,Ph.Eur. Anomali (Flavonol ≥3.5),one_class_svm,,,,,0.588,0.974,0.733,,,,,Kernel tabanlı sınır öğrenme
+10_Anomali_Tespiti,Ph.Eur. Anomali (Flavonol ≥3.5),autoencoder,,,,,0.818,0.077,0.141,,,,,Reconstruction error → gürültü-temiz temsil; Recall kritik
+12_GA_Feature_Selection,Flavonol,GA[pls] + pls,0.643,,,,,,,0.343,1.673,,,GA-seçili 151/520 feature; ΔR²=+0.402
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + lightgbm,0.567,,,,,,,0.378,1.52,,,GA-seçili 254/520 feature; ΔR²=+0.221
+12_GA_Feature_Selection,Flavonol,GA[pls] + svr,0.404,,,,,,,0.443,1.296,,,GA-seçili 151/520 feature; ΔR²=+0.017
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + svr,0.397,,,,,,,0.446,1.287,,,GA-seçili 254/520 feature; ΔR²=+0.009
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + xgboost,0.394,,,,,,,0.447,1.285,,,GA-seçili 254/520 feature; ΔR²=+0.020
+12_GA_Feature_Selection,Flavonol,GA[pls] + xgboost,0.385,,,,,,,0.45,1.275,,,GA-seçili 151/520 feature; ΔR²=+0.011
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + rf,0.371,,,,,,,0.455,1.261,,,GA-seçili 254/520 feature; ΔR²=+0.006
+12_GA_Feature_Selection,Flavonol,GA[pls] + rf,0.356,,,,,,,0.461,1.246,,,GA-seçili 151/520 feature; ΔR²=-0.009
+12_GA_Feature_Selection,Flavonol,GA[pls] + lightgbm,0.348,,,,,,,0.464,1.239,,,GA-seçili 151/520 feature; ΔR²=+0.002
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + ridge,0.332,,,,,,,0.469,1.224,,,GA-seçili 254/520 feature; ΔR²=+0.007
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + elasticnet,0.321,,,,,,,0.473,1.213,,,GA-seçili 254/520 feature; ΔR²=-0.008
+12_GA_Feature_Selection,Flavonol,GA[pls] + elasticnet,0.306,,,,,,,0.478,1.2,,,GA-seçili 151/520 feature; ΔR²=-0.022
+12_GA_Feature_Selection,Flavonol,GA[lightgbm] + pls,0.259,,,,,,,0.494,1.162,,,GA-seçili 254/520 feature; ΔR²=+0.018
+12_GA_Feature_Selection,Flavonol,GA[pls] + ridge,0.148,,,,,,,0.53,1.083,,,GA-seçili 151/520 feature; ΔR²=-0.178
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+PLS → 3-sınıf (kvantil binning),,0.623,0.623,0.63,,,0.63,,,,,regression_to_ordinal
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),"Stacking (GA, meta=Ridge)",0.578,,,,,,,0.373,,,,stacking_ga | ΔR²_OOF=0.0274
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+ridge (base),0.571,,,,,,,0.376,,,,stacking_ga | ΔR²_OOF=0.0204
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),raw → freshGA → PLS,0.564,,,,,,,0.379,,,,preproc_ga_pls_v2 | n_ga=220 | ΔR²_OOF=0.0128
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA-seed42 + PLS,0.564,,,,,,,0.379,,,,multiseed_ga_pls | n_ga=220 | ΔR²_OOF=0.0128
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),SNV → freshGA → PLS,0.561,,,,,,,0.38,,,,preproc_ga_pls_v2 | n_ga=227 | ΔR²_OOF=0.0106
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),SG-d1 → freshGA → PLS,0.56,,,,,,,0.381,,,,preproc_ga_pls_v2 | n_ga=219 | ΔR²_OOF=0.0095
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+PLS (kontrol),0.551,,,,,,,0.385,,,,residual_pls_lgbm | ΔR²_OOF=0.0
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+pls (base),0.551,,,,,,,0.385,,,,stacking_ga | ΔR²_OOF=0.0
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+PLS (regresyon),0.551,,,,,,,0.385,,,,regression_to_ordinal | ΔR²_OOF=0.0
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),SNV+SG-d1 → freshGA → PLS,0.55,,,,,,,0.385,,,,preproc_ga_pls_v2 | n_ga=219 | ΔR²_OOF=-0.0009
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),MSC → freshGA → PLS,0.533,,,,,,,0.392,,,,preproc_ga_pls_v2 | n_ga=224 | ΔR²_OOF=-0.0175
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+PLS + LGBM(residual),0.506,,,,,,,0.404,,,,residual_pls_lgbm | ΔR²_OOF=-0.045
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),SG-d2 → freshGA → PLS,0.494,,,,,,,0.408,,,,preproc_ga_pls_v2 | n_ga=219 | ΔR²_OOF=-0.0565
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA-seed123 + PLS,0.479,,,,,,,0.414,,,,multiseed_ga_pls | n_ga=193 | ΔR²_OOF=-0.0714
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA-intersection + PLS,0.46,,,,,,,0.422,,,,multiseed_ga_pls | n_ga=46 | ΔR²_OOF=-0.0905
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA-union + PLS,0.435,,,,,,,0.432,,,,multiseed_ga_pls | n_ga=391 | ΔR²_OOF=-0.1154
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA-seed7 + PLS,0.434,,,,,,,0.432,,,,multiseed_ga_pls | n_ga=208 | ΔR²_OOF=-0.1163
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+svr (base),0.372,,,,,,,0.455,,,,stacking_ga | ΔR²_OOF=-0.1783
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+XGBoost,0.347,,,,,,,0.464,,,,boosting_ga | ΔR²_OOF=-0.2038
+13_Flavonol_Kombinasyonlar,Flavonol (GA kombinasyonları),GA+lgbm (base),0.275,,,,,,,0.489,,,,stacking_ga | ΔR²_OOF=-0.2755

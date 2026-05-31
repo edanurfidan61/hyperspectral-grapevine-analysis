@@ -1,0 +1,94 @@
+﻿group,code,experiment,model,task,target,metric,mean,std,n_features
+BASE,B0,Baseline (tam),pls,regression,flavonol,R2,0.2608,0.121,520
+BASE,B0,Baseline (tam),lightgbm,regression,flavonol,R2,0.3495,0.0722,520
+BASE,B0,Baseline (tam),lightgbm,classification,stress,Macro_F1,0.7444,0.0365,520
+BASE,B0,Baseline (tam),random_forest,regression,flavonol,R2,0.3524,0.0558,520
+BASE,B0,Baseline (tam),random_forest,classification,stress,Macro_F1,0.7011,0.0777,520
+PREPROC,A1,SavGol kapalı,pls,regression,flavonol,R2,0.2444,0.122,520
+PREPROC,A1,SavGol kapalı,lightgbm,regression,flavonol,R2,0.227,0.0964,520
+PREPROC,A1,SavGol kapalı,lightgbm,classification,stress,Macro_F1,0.7899,0.0415,520
+PREPROC,A1,SavGol kapalı,random_forest,regression,flavonol,R2,0.2818,0.1073,520
+PREPROC,A1,SavGol kapalı,random_forest,classification,stress,Macro_F1,0.7439,0.0737,520
+PREPROC,A2,SNV kapalı,pls,regression,flavonol,R2,0.2717,0.1562,520
+PREPROC,A2,SNV kapalı,lightgbm,regression,flavonol,R2,0.3372,0.0814,520
+PREPROC,A2,SNV kapalı,lightgbm,classification,stress,Macro_F1,0.7523,0.0627,520
+PREPROC,A2,SNV kapalı,random_forest,regression,flavonol,R2,0.3545,0.0638,520
+PREPROC,A2,SNV kapalı,random_forest,classification,stress,Macro_F1,0.7326,0.0681,520
+PREPROC,A3,SavGol+SNV kapalı,pls,regression,flavonol,R2,0.2245,0.1794,520
+PREPROC,A3,SavGol+SNV kapalı,lightgbm,regression,flavonol,R2,0.2202,0.0896,520
+PREPROC,A3,SavGol+SNV kapalı,lightgbm,classification,stress,Macro_F1,0.754,0.0473,520
+PREPROC,A3,SavGol+SNV kapalı,random_forest,regression,flavonol,R2,0.21,0.106,520
+PREPROC,A3,SavGol+SNV kapalı,random_forest,classification,stress,Macro_F1,0.752,0.0721,520
+FEATURE,B1,Sadece spektrum,pls,regression,flavonol,R2,0.2197,0.1218,204
+FEATURE,B1,Sadece spektrum,lightgbm,regression,flavonol,R2,0.2155,0.1824,204
+FEATURE,B1,Sadece spektrum,lightgbm,classification,stress,Macro_F1,0.6923,0.0704,204
+FEATURE,B1,Sadece spektrum,random_forest,regression,flavonol,R2,0.2909,0.1404,204
+FEATURE,B1,Sadece spektrum,random_forest,classification,stress,Macro_F1,0.6232,0.0593,204
+FEATURE,B2,Sadece indeks,pls,regression,flavonol,R2,0.2227,0.1296,106
+FEATURE,B2,Sadece indeks,lightgbm,regression,flavonol,R2,0.2137,0.0811,106
+FEATURE,B2,Sadece indeks,lightgbm,classification,stress,Macro_F1,0.756,0.0068,106
+FEATURE,B2,Sadece indeks,random_forest,regression,flavonol,R2,0.2172,0.0688,106
+FEATURE,B2,Sadece indeks,random_forest,classification,stress,Macro_F1,0.7957,0.0682,106
+FEATURE,B4,Sadece 1. türev,pls,regression,flavonol,R2,0.275,0.1136,210
+FEATURE,B4,Sadece 1. türev,lightgbm,regression,flavonol,R2,0.3168,0.1311,210
+FEATURE,B4,Sadece 1. türev,lightgbm,classification,stress,Macro_F1,0.6634,0.064,210
+FEATURE,B4,Sadece 1. türev,random_forest,regression,flavonol,R2,0.3312,0.0948,210
+FEATURE,B4,Sadece 1. türev,random_forest,classification,stress,Macro_F1,0.687,0.0624,210
+INDEX,C1,NDVI çıkarıldı,pls,regression,flavonol,R2,0.261,0.1206,516
+INDEX,C1,NDVI çıkarıldı,lightgbm,regression,flavonol,R2,0.3554,0.0418,516
+INDEX,C1,NDVI çıkarıldı,lightgbm,classification,stress,Macro_F1,0.735,0.0549,516
+INDEX,C1,NDVI çıkarıldı,random_forest,regression,flavonol,R2,0.3546,0.0659,516
+INDEX,C1,NDVI çıkarıldı,random_forest,classification,stress,Macro_F1,0.6974,0.0584,516
+INDEX,C2,ARI çıkarıldı,pls,regression,flavonol,R2,0.2582,0.1198,516
+INDEX,C2,ARI çıkarıldı,lightgbm,regression,flavonol,R2,0.3659,0.0745,516
+INDEX,C2,ARI çıkarıldı,lightgbm,classification,stress,Macro_F1,0.7601,0.0704,516
+INDEX,C2,ARI çıkarıldı,random_forest,regression,flavonol,R2,0.3547,0.0627,516
+INDEX,C2,ARI çıkarıldı,random_forest,classification,stress,Macro_F1,0.6817,0.0769,516
+INDEX,C3,CRI çıkarıldı,pls,regression,flavonol,R2,0.2588,0.1188,516
+INDEX,C3,CRI çıkarıldı,lightgbm,regression,flavonol,R2,0.3626,0.0596,516
+INDEX,C3,CRI çıkarıldı,lightgbm,classification,stress,Macro_F1,0.741,0.0326,516
+INDEX,C3,CRI çıkarıldı,random_forest,regression,flavonol,R2,0.3554,0.0625,516
+INDEX,C3,CRI çıkarıldı,random_forest,classification,stress,Macro_F1,0.7042,0.0788,516
+INDEX,C4,PRI çıkarıldı,pls,regression,flavonol,R2,0.2611,0.1208,516
+INDEX,C4,PRI çıkarıldı,lightgbm,regression,flavonol,R2,0.35,0.0615,516
+INDEX,C4,PRI çıkarıldı,lightgbm,classification,stress,Macro_F1,0.7331,0.0436,516
+INDEX,C4,PRI çıkarıldı,random_forest,regression,flavonol,R2,0.3522,0.069,516
+INDEX,C4,PRI çıkarıldı,random_forest,classification,stress,Macro_F1,0.6836,0.059,516
+INDEX,C5,ZTM çıkarıldı,pls,regression,flavonol,R2,0.2599,0.1219,516
+INDEX,C5,ZTM çıkarıldı,lightgbm,regression,flavonol,R2,0.3674,0.0656,516
+INDEX,C5,ZTM çıkarıldı,lightgbm,classification,stress,Macro_F1,0.7371,0.0416,516
+INDEX,C5,ZTM çıkarıldı,random_forest,regression,flavonol,R2,0.3517,0.0629,516
+INDEX,C5,ZTM çıkarıldı,random_forest,classification,stress,Macro_F1,0.7082,0.0475,516
+INDEX,C6,SIPI çıkarıldı,pls,regression,flavonol,R2,0.2602,0.121,516
+INDEX,C6,SIPI çıkarıldı,lightgbm,regression,flavonol,R2,0.3533,0.0772,516
+INDEX,C6,SIPI çıkarıldı,lightgbm,classification,stress,Macro_F1,0.7653,0.0459,516
+INDEX,C6,SIPI çıkarıldı,random_forest,regression,flavonol,R2,0.3525,0.071,516
+INDEX,C6,SIPI çıkarıldı,random_forest,classification,stress,Macro_F1,0.7104,0.0746,516
+INDEX,C7,FLAVI çıkarıldı,pls,regression,flavonol,R2,0.2611,0.1208,516
+INDEX,C7,FLAVI çıkarıldı,lightgbm,regression,flavonol,R2,0.3568,0.0649,516
+INDEX,C7,FLAVI çıkarıldı,lightgbm,classification,stress,Macro_F1,0.738,0.046,516
+INDEX,C7,FLAVI çıkarıldı,random_forest,regression,flavonol,R2,0.3587,0.0634,516
+INDEX,C7,FLAVI çıkarıldı,random_forest,classification,stress,Macro_F1,0.711,0.0433,516
+CLS,D1,Resampling YOK,lightgbm,classification,stress,Macro_F1,0.7714,0.0396,520
+CLS,D1,Resampling YOK,random_forest,classification,stress,Macro_F1,0.6845,0.0673,520
+CLS,D2,Sadece SMOTE,lightgbm,classification,stress,Macro_F1,0.7575,0.0359,520
+CLS,D2,Sadece SMOTE,random_forest,classification,stress,Macro_F1,0.6948,0.0493,520
+CLS,D3,Class weight YOK,lightgbm,classification,stress,Macro_F1,0.7444,0.0365,520
+CLS,D3,Class weight YOK,random_forest,classification,stress,Macro_F1,0.7011,0.0777,520
+CLS,D4,Tam baseline (smote_tomek + balanced),lightgbm,classification,stress,Macro_F1,0.7444,0.0365,520
+CLS,D4,Tam baseline (smote_tomek + balanced),random_forest,classification,stress,Macro_F1,0.7011,0.0777,520
+TUNING,E1,HP yok (sklearn default),pls,regression,flavonol,R2,0.2608,0.121,520
+TUNING,E1,HP yok (sklearn default),lightgbm,regression,flavonol,R2,0.3495,0.0722,520
+TUNING,E1,HP yok (sklearn default),lightgbm,classification,stress,Macro_F1,0.7444,0.0365,520
+TUNING,E1,HP yok (sklearn default),random_forest,regression,flavonol,R2,0.3524,0.0558,520
+TUNING,E1,HP yok (sklearn default),random_forest,classification,stress,Macro_F1,0.7011,0.0777,520
+TUNING,E2,Sadece coarse,pls,regression,flavonol,R2,0.3935,0.178,520
+TUNING,E2,Sadece coarse,lightgbm,regression,flavonol,R2,0.3837,0.0507,520
+TUNING,E2,Sadece coarse,lightgbm,classification,stress,Macro_F1,0.7787,0.0524,520
+TUNING,E2,Sadece coarse,random_forest,regression,flavonol,R2,0.3593,0.0639,520
+TUNING,E2,Sadece coarse,random_forest,classification,stress,Macro_F1,0.7323,0.0679,520
+TUNING,E3,Coarse + fine,pls,regression,flavonol,R2,0.3935,0.178,520
+TUNING,E3,Coarse + fine,lightgbm,regression,flavonol,R2,0.3902,0.0473,520
+TUNING,E3,Coarse + fine,lightgbm,classification,stress,Macro_F1,0.7815,0.0458,520
+TUNING,E3,Coarse + fine,random_forest,regression,flavonol,R2,0.3571,0.0635,520
+TUNING,E3,Coarse + fine,random_forest,classification,stress,Macro_F1,0.7296,0.076,520

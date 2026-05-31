@@ -1,0 +1,203 @@
+{
+  "task": "classification",
+  "n_runs": 3,
+  "results": [
+    {
+      "task": "classification",
+      "model": "random_forest",
+      "target": "stress",
+      "coarse": {
+        "best": {
+          "n_estimators": 300,
+          "min_samples_split": 5,
+          "min_samples_leaf": 1,
+          "max_features": "log2",
+          "max_depth": 15,
+          "class_weight": "balanced"
+        },
+        "score": 0.7322897082917807,
+        "duration_s": 58.4
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 436,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "log2",
+          "class_weight": "balanced_subsample"
+        },
+        "score": 0.729596541479344,
+        "duration_s": 47.0
+      },
+      "final_metrics": {
+        "accuracy": 0.7450980392156863,
+        "balanced_accuracy": 0.7044642857142858,
+        "macro_precision": 0.7147745854963675,
+        "macro_recall": 0.7044642857142858,
+        "macro_f1": 0.7064996058303561,
+        "report": "                     precision    recall  f1-score   support\n\n           sağlıklı       0.71      0.80      0.75        40\n  flavescence dorée       0.80      0.88      0.84        80\ndiğer biyotik stres       0.73      0.64      0.69        56\n   abiyotik / diğer       0.61      0.50      0.55        28\n\n           accuracy                           0.75       204\n          macro avg       0.71      0.70      0.71       204\n       weighted avg       0.74      0.75      0.74       204\n",
+        "confusion_matrix": [
+          [
+            32,
+            1,
+            3,
+            4
+          ],
+          [
+            2,
+            70,
+            6,
+            2
+          ],
+          [
+            5,
+            12,
+            36,
+            3
+          ],
+          [
+            6,
+            4,
+            4,
+            14
+          ]
+        ],
+        "labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "class_names": [
+          "sağlıklı",
+          "flavescence dorée",
+          "diğer biyotik stres",
+          "abiyotik / diğer"
+        ]
+      }
+    },
+    {
+      "task": "classification",
+      "model": "lightgbm",
+      "target": "stress",
+      "coarse": {
+        "best": {
+          "num_leaves": 31,
+          "n_estimators": 500,
+          "min_data_in_leaf": 10,
+          "learning_rate": 0.1,
+          "feature_fraction": 0.7,
+          "class_weight": null
+        },
+        "score": 0.7786943186746996,
+        "duration_s": 476.9
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 616,
+          "learning_rate": 0.06859280884685368,
+          "num_leaves": 28,
+          "min_data_in_leaf": 11,
+          "feature_fraction": 0.7608740150213829,
+          "class_weight": null
+        },
+        "score": 0.7815387581618765,
+        "duration_s": 216.8
+      },
+      "final_metrics": {
+        "accuracy": 0.803921568627451,
+        "balanced_accuracy": 0.7620535714285714,
+        "macro_precision": 0.7862150643024741,
+        "macro_recall": 0.7620535714285714,
+        "macro_f1": 0.7692515571267106,
+        "report": "                     precision    recall  f1-score   support\n\n           sağlıklı       0.81      0.88      0.84        40\n  flavescence dorée       0.82      0.89      0.85        80\ndiğer biyotik stres       0.81      0.79      0.80        56\n   abiyotik / diğer       0.70      0.50      0.58        28\n\n           accuracy                           0.80       204\n          macro avg       0.79      0.76      0.77       204\n       weighted avg       0.80      0.80      0.80       204\n",
+        "confusion_matrix": [
+          [
+            35,
+            3,
+            1,
+            1
+          ],
+          [
+            2,
+            71,
+            5,
+            2
+          ],
+          [
+            1,
+            8,
+            44,
+            3
+          ],
+          [
+            5,
+            5,
+            4,
+            14
+          ]
+        ],
+        "labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "class_names": [
+          "sağlıklı",
+          "flavescence dorée",
+          "diğer biyotik stres",
+          "abiyotik / diğer"
+        ]
+      }
+    },
+    {
+      "task": "classification",
+      "model": "pheur",
+      "target": "flavonol_pheur",
+      "coarse": {
+        "best": {
+          "gamma": 0.01,
+          "C": 1
+        },
+        "score": 0.7488648686348633,
+        "duration_s": 0.5
+      },
+      "fine": {
+        "best": {
+          "C": 1,
+          "gamma": 0.01
+        },
+        "score": 0.7488648686348633,
+        "duration_s": 3.1
+      },
+      "final_metrics": {
+        "accuracy": 0.7647058823529411,
+        "balanced_accuracy": 0.7462422634836428,
+        "macro_precision": 0.7690821256038647,
+        "macro_recall": 0.7462422634836428,
+        "macro_f1": 0.7509157509157509,
+        "report": "               precision    recall  f1-score   support\n\n FAIL (<eşik)       0.76      0.87      0.81       117\nPASS (>=eşik)       0.78      0.62      0.69        87\n\n     accuracy                           0.76       204\n    macro avg       0.77      0.75      0.75       204\n weighted avg       0.77      0.76      0.76       204\n",
+        "confusion_matrix": [
+          [
+            102,
+            15
+          ],
+          [
+            33,
+            54
+          ]
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "class_names": [
+          "FAIL (<eşik)",
+          "PASS (>=eşik)"
+        ]
+      }
+    }
+  ]
+}

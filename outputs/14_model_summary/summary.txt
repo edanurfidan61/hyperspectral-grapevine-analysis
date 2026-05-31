@@ -1,0 +1,16 @@
+﻿Konsolide Model Karşılaştırma Tablosu
+============================================================
+Toplam satır       : 92
+Aşamalar           : ['06_Regresyon', '06b_Regresyon_Tuned', '07_Stres_Siniflandirma_SMOTE', '07b_Stres_Siniflandirma_Tuned', '08_Derin_Ogrenme', '09_Ordinal_Flavonol', '10_Anomali_Tespiti', '12_GA_Feature_Selection', '13_Flavonol_Kombinasyonlar']
+Hedefler           : ['4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik)', 'Flavonol', 'Flavonol (GA kombinasyonları)', 'Klorofil', 'NBI', 'Ordinal Flavonol (3cls)', 'Ordinal Flavonol (4cls)', 'Ph.Eur. Anomali (Flavonol ≥3.5)', 'Ph.Eur. Flavonol ≥3.5 (binary)']
+
+En iyi 5 (R² varsa, yoksa Macro_F1):
+------------------------------------------------------------
+  06b_Regresyon_Tuned      | pls                  | Klorofil                            | R²=0.855
+  06b_Regresyon_Tuned      | random_forest        | Klorofil                            | R²=0.843
+  06_Regresyon             | random_forest        | Klorofil                            | R²=0.843
+  06_Regresyon             | stacking             | Klorofil                            | R²=0.841
+  06b_Regresyon_Tuned      | lightgbm             | Klorofil                            | R²=0.841
+------------------------------------------------------------
+
+Çıktılar           : C:\bitirme_3\outputs\14_model_summary

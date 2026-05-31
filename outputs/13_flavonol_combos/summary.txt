@@ -1,0 +1,34 @@
+﻿Flavonol Kombinasyon Stratejileri (v2) — Özet
+========================================================================
+Hazır GA maskesi (12_ga_feature_selection):
+  R²_fold_mean (GA modülü-uyumlu) = +0.543
+  R²_OOF (cross_val_predict)      = +0.551
+Toplam süre: 557.2 sn (9.3 dk)
+
+R²_fold_mean ile sıralı (ilk 25):
+------------------------------------------------------------------------
+  R²f=+0.575 (Δf=+0.031) | R²o=+0.578 (Δo=+0.027) | RMSE=0.373 |            stacking_ga :: Stacking (GA, meta=Ridge)
+  R²f=+0.567 (Δf=+0.023) | R²o=+0.571 (Δo=+0.020) | RMSE=0.376 |            stacking_ga :: GA+ridge (base)
+  R²f=+0.560 (Δf=+0.016) | R²o=+0.561 (Δo=+0.011) | RMSE=0.380 |      preproc_ga_pls_v2 :: SNV → freshGA → PLS
+  R²f=+0.558 (Δf=+0.015) | R²o=+0.564 (Δo=+0.013) | RMSE=0.379 |      preproc_ga_pls_v2 :: raw → freshGA → PLS
+  R²f=+0.558 (Δf=+0.015) | R²o=+0.564 (Δo=+0.013) | RMSE=0.379 |       multiseed_ga_pls :: GA-seed42 + PLS
+  R²f=+0.553 (Δf=+0.010) | R²o=+0.560 (Δo=+0.009) | RMSE=0.381 |      preproc_ga_pls_v2 :: SG-d1 → freshGA → PLS
+  R²f=+0.543 (Δf=+0.000) | R²o=+0.551 (Δo=+0.000) | RMSE=0.385 |            stacking_ga :: GA+pls (base)
+  R²f=+0.543 (Δf=+0.000) | R²o=+0.551 (Δo=+0.000) | RMSE=0.385 |      residual_pls_lgbm :: GA+PLS (kontrol)
+  R²f=+0.543 (Δf=+0.000) | R²o=+0.551 (Δo=+0.000) | RMSE=0.385 |  regression_to_ordinal :: GA+PLS (regresyon)
+  R²f=+0.542 (Δf=-0.001) | R²o=+0.550 (Δo=-0.001) | RMSE=0.385 |      preproc_ga_pls_v2 :: SNV+SG-d1 → freshGA → PLS
+  R²f=+0.530 (Δf=-0.013) | R²o=+0.533 (Δo=-0.018) | RMSE=0.392 |      preproc_ga_pls_v2 :: MSC → freshGA → PLS
+  R²f=+0.497 (Δf=-0.046) | R²o=+0.506 (Δo=-0.045) | RMSE=0.404 |      residual_pls_lgbm :: GA+PLS + LGBM(residual)
+  R²f=+0.481 (Δf=-0.062) | R²o=+0.494 (Δo=-0.057) | RMSE=0.408 |      preproc_ga_pls_v2 :: SG-d2 → freshGA → PLS
+  R²f=+0.469 (Δf=-0.074) | R²o=+0.479 (Δo=-0.071) | RMSE=0.414 |       multiseed_ga_pls :: GA-seed123 + PLS
+  R²f=+0.452 (Δf=-0.091) | R²o=+0.460 (Δo=-0.090) | RMSE=0.422 |       multiseed_ga_pls :: GA-intersection + PLS
+  R²f=+0.422 (Δf=-0.121) | R²o=+0.435 (Δo=-0.115) | RMSE=0.432 |       multiseed_ga_pls :: GA-union + PLS
+  R²f=+0.418 (Δf=-0.125) | R²o=+0.434 (Δo=-0.116) | RMSE=0.432 |       multiseed_ga_pls :: GA-seed7 + PLS
+  R²f=+0.365 (Δf=-0.178) | R²o=+0.372 (Δo=-0.178) | RMSE=0.455 |            stacking_ga :: GA+svr (base)
+  R²f=+0.337 (Δf=-0.206) | R²o=+0.347 (Δo=-0.204) | RMSE=0.464 |            boosting_ga :: GA+XGBoost
+  R²f=+0.268 (Δf=-0.276) | R²o=+0.275 (Δo=-0.276) | RMSE=0.489 |            stacking_ga :: GA+lgbm (base)
+
+Tüm sonuçlar : C:\bitirme_3\outputs\13_flavonol_combos\comparison.csv
+JSON         : C:\bitirme_3\outputs\13_flavonol_combos\comparison.json
+
+Notasyon: R²f=fold-mean (GA modülüyle aynı), R²o=OOF (konservatif)

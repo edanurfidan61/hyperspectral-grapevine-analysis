@@ -1,0 +1,56 @@
+# ── Python ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Sanal ortam / Virtual env ───────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Ham veri (42 GB ENVI küpler) repoya GİTMEZ ──────────────────────────
+data/raw/
+data/processed/
+
+# ── Büyük binary'ler genel olarak hariç ─────────────────────────────────
+*.npy
+*.npz
+*.pt
+*.ckpt
+*.joblib
+
+# ── İSTİSNA: işlenmiş dataset repoda KALSIN ─────────────────────────────
+# outputs/01_dataset/X.npy, y_*.npy, groups_*.npy ve diğer sonuç dizileri
+# (başkalarının modeli ham veri olmadan çalıştırabilmesi için).
+!outputs/**/*.npy
+!outputs/**/*.npz
+
+# ── Per-örnek görselleştirme dökümleri (~530 MB) repoya GİTMEZ ──────────
+outputs/03_visualization/
+
+# ── Log dosyaları ───────────────────────────────────────────────────────
+outputs/*.log
+
+# ── Yerel / kişisel ─────────────────────────────────────────────────────
+.claude/
+memory/
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── OS ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+{
+  "best_params": {
+    "n_estimators": 505,
+    "max_depth": null,
+    "min_samples_split": 5,
+    "min_samples_leaf": 3,
+    "max_features": 0.5
+  },
+  "cv_score": 0.357056299950267,
+  "scoring": "r2",
+  "n_trials": 50,
+  "timeout_s": 600,
+  "duration_s": 79.8
+}

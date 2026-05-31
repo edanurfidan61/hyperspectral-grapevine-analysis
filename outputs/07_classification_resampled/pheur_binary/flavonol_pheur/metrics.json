@@ -1,0 +1,26 @@
+{
+  "accuracy": 0.7745098039215687,
+  "balanced_accuracy": 0.7636310050103154,
+  "macro_precision": 0.771746835443038,
+  "macro_recall": 0.7636310050103154,
+  "macro_f1": 0.7664044608184806,
+  "report": "               precision    recall  f1-score   support\n\n FAIL (<eşik)       0.78      0.84      0.81       117\nPASS (>=eşik)       0.76      0.69      0.72        87\n\n     accuracy                           0.77       204\n    macro avg       0.77      0.76      0.77       204\n weighted avg       0.77      0.77      0.77       204\n",
+  "confusion_matrix": [
+    [
+      98,
+      19
+    ],
+    [
+      27,
+      60
+    ]
+  ],
+  "labels": [
+    0,
+    1
+  ],
+  "class_names": [
+    "FAIL (<eşik)",
+    "PASS (>=eşik)"
+  ]
+}

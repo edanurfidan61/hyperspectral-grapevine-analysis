@@ -1,0 +1,10 @@
+{
+  "best_params": {
+    "alpha": 50
+  },
+  "cv_score": 0.383172597796074,
+  "scoring": "r2",
+  "n_trials": 50,
+  "timeout_s": 600,
+  "duration_s": 0.8
+}

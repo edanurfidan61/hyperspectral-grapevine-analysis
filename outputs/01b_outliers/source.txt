@@ -1,0 +1,5 @@
+producer    : src/m05_dataset/outlier_filter.py
+config      : C:\bitirme_3\config\default.yaml
+git_sha     : (repo yok)
+timestamp   : 2026-05-31T05:16:14
+platform    : Windows-10-10.0.26200-SP0

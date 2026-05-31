@@ -1,0 +1,425 @@
+{
+  "config_source": "C:\\bitirme_3\\config\\default.yaml",
+  "git_sha": null,
+  "started_at": "2026-05-31T05:12:39",
+  "finished_at": "2026-05-31T07:50:04",
+  "stages": [
+    {
+      "name": "01_dataset",
+      "duration_seconds": 214.55,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:16:14"
+    },
+    {
+      "name": "01b_outliers",
+      "duration_seconds": 0.26,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:16:14"
+    },
+    {
+      "name": "01c_holdout",
+      "duration_seconds": 0.22,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:16:14"
+    },
+    {
+      "name": "02_eda",
+      "duration_seconds": 1.07,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:16:16"
+    },
+    {
+      "name": "03_visualization",
+      "duration_seconds": 572.46,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:25:48"
+    },
+    {
+      "name": "04_feature_shap",
+      "duration_seconds": 4.08,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:25:52"
+    },
+    {
+      "name": "05_feature_rfe",
+      "duration_seconds": 27.54,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:26:20"
+    },
+    {
+      "name": "05b_pls_vip",
+      "duration_seconds": 0.65,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:26:20"
+    },
+    {
+      "name": "06_regression",
+      "duration_seconds": 86.49,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:27:47"
+    },
+    {
+      "name": "07_classification",
+      "duration_seconds": 17.27,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:28:04"
+    },
+    {
+      "name": "06b_regression_tuned",
+      "duration_seconds": 761.09,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:40:45"
+    },
+    {
+      "name": "07b_classification_tuned",
+      "duration_seconds": 809.92,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:54:15"
+    },
+    {
+      "name": "08_deep_learning",
+      "duration_seconds": 245.88,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:58:21"
+    },
+    {
+      "name": "09_ordinal_flavonol",
+      "duration_seconds": 7.55,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:58:29"
+    },
+    {
+      "name": "10_anomaly_flavonol",
+      "duration_seconds": 0.85,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:58:29"
+    },
+    {
+      "name": "11_ensemble",
+      "duration_seconds": 0.14,
+      "status": "ok",
+      "finished_at": "2026-05-31T05:58:29"
+    },
+    {
+      "name": "12_ga_feature_selection",
+      "duration_seconds": 1281.45,
+      "status": "ok",
+      "finished_at": "2026-05-31T06:19:51"
+    },
+    {
+      "name": "12b_ga_wavelength_consensus",
+      "duration_seconds": 2.32,
+      "status": "ok",
+      "finished_at": "2026-05-31T06:19:53"
+    },
+    {
+      "name": "13_flavonol_combos",
+      "duration_seconds": 557.46,
+      "status": "ok",
+      "finished_at": "2026-05-31T06:29:11"
+    },
+    {
+      "name": "13b_feature_consensus",
+      "duration_seconds": 0.42,
+      "status": "ok",
+      "finished_at": "2026-05-31T06:29:11"
+    },
+    {
+      "name": "14_model_summary",
+      "duration_seconds": 0.35,
+      "status": "ok",
+      "finished_at": "2026-05-31T06:29:11"
+    },
+    {
+      "name": "15_ablation",
+      "duration_seconds": 2727.04,
+      "status": "ok",
+      "finished_at": "2026-05-31T07:14:39"
+    },
+    {
+      "name": "16_final_combos",
+      "duration_seconds": 2125.77,
+      "status": "ok",
+      "finished_at": "2026-05-31T07:50:04"
+    }
+  ],
+  "config": {
+    "data": {
+      "raw_path": "data/raw",
+      "ground_truth": "data/metadata/description-2.tab",
+      "processed_path": "outputs/01_dataset",
+      "raw_recursive": true
+    },
+    "spectral": {
+      "bands": {
+        "blue_410": 410,
+        "blue_460": 460,
+        "red_670": 670,
+        "red_edge_700": 700,
+        "red_edge_710": 710,
+        "red_edge_720": 720,
+        "nir_800": 800
+      },
+      "ndvi_red": 670,
+      "ndvi_nir": 800
+    },
+    "preprocessing": {
+      "savgol": {
+        "window_length": 11,
+        "polyorder": 2,
+        "deriv": 0
+      },
+      "snv": {
+        "enabled": true
+      },
+      "msc": {
+        "enabled": false
+      }
+    },
+    "segmentation": {
+      "ndvi_threshold": 0.1,
+      "whitedisk_threshold": 0.85,
+      "min_leaf_pixels": 1000,
+      "morph_open_size": 3,
+      "morph_close_size": 5
+    },
+    "indices": {
+      "enabled": [
+        "NDVI",
+        "GNDVI",
+        "ARI",
+        "RVSI",
+        "ZTM",
+        "CRI",
+        "PRI",
+        "mARI",
+        "SIPI",
+        "WBI",
+        "REP",
+        "BES",
+        "FLAVI"
+      ]
+    },
+    "features": {
+      "stats": [
+        "mean",
+        "std",
+        "p25",
+        "p75"
+      ]
+    },
+    "targets": {
+      "regression": [
+        "chlorophyll",
+        "flavonol",
+        "nbi"
+      ],
+      "classification": [
+        "stress"
+      ],
+      "pheur_flavonol_threshold": 3.5
+    },
+    "models": {
+      "cv": 5,
+      "random_state": 42,
+      "test_size": 0.2
+    },
+    "cv": {
+      "group_key": "leaf"
+    },
+    "hp_search": {
+      "coarse": {
+        "enabled": true,
+        "n_iter": 40,
+        "scoring_regression": "r2",
+        "scoring_classification": "f1_macro"
+      },
+      "fine": {
+        "enabled": true,
+        "n_trials": 50,
+        "timeout_seconds": 600
+      }
+    },
+    "classification": {
+      "resampling": {
+        "enabled": true,
+        "method": "smote_tomek"
+      }
+    },
+    "outliers": {
+      "action": "warn",
+      "contamination": 0.05,
+      "iqr_factor": 1.5
+    },
+    "holdout": {
+      "stratify_target": "stress",
+      "log_transform_targets": [
+        "flavonol"
+      ],
+      "stratify_regression": true,
+      "regression_n_bins": 5,
+      "seed_search": {
+        "enabled": true,
+        "seeds": [
+          42,
+          1,
+          7,
+          21,
+          123
+        ]
+      },
+      "regression": {
+        "ridge": {
+          "alphas": [
+            0.0001,
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0,
+            100.0
+          ]
+        },
+        "random_forest": {
+          "n_estimators": 500,
+          "max_depth": null,
+          "min_samples_split": 2
+        },
+        "lightgbm": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "num_leaves": 31,
+          "min_data_in_leaf": 5
+        },
+        "stacking": {
+          "base": [
+            "ridge",
+            "random_forest",
+            "lightgbm"
+          ],
+          "final_estimator": "ridge"
+        },
+        "pls": {
+          "n_components": 12,
+          "max_iter": 500
+        },
+        "huber": {
+          "epsilon": 1.35,
+          "alpha": 0.001,
+          "max_iter": 500
+        }
+      },
+      "classification": {
+        "random_forest": {
+          "n_estimators": 500,
+          "class_weight": "balanced"
+        },
+        "lightgbm": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "class_weight": "balanced"
+        },
+        "stacking": {
+          "base": [
+            "random_forest",
+            "lightgbm"
+          ],
+          "final_estimator": "logistic_regression"
+        },
+        "pheur_binary": {
+          "kernel": "rbf",
+          "C": 1.0,
+          "gamma": "scale"
+        }
+      },
+      "deep_learning": {
+        "common": {
+          "epochs": 120,
+          "batch_size": 16,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "patience": 20,
+          "device": "cpu",
+          "n_splits": 5,
+          "val_size": 0.2,
+          "augment_noise": 0.05,
+          "augment_shift": 2
+        },
+        "cnn1d": {
+          "channels": [
+            16,
+            32
+          ],
+          "kernel_size": 5,
+          "dropout": 0.4
+        },
+        "resnet1d": {
+          "channels": [
+            16,
+            32
+          ],
+          "n_blocks": 2,
+          "dropout": 0.4
+        },
+        "mlp": {
+          "hidden": [
+            128,
+            64
+          ],
+          "dropout": 0.4
+        },
+        "rnn": {
+          "hidden_size": 64,
+          "num_layers": 1,
+          "bidirectional": true,
+          "type": "lstm",
+          "dropout": 0.3
+        },
+        "transformer": {
+          "d_model": 32,
+          "nhead": 4,
+          "num_layers": 1,
+          "dim_feedforward": 64,
+          "dropout": 0.2
+        },
+        "autoencoder": {
+          "latent_dim": 24,
+          "hidden": [
+            128,
+            64
+          ],
+          "pretrain_epochs": 60,
+          "finetune_epochs": 60,
+          "noise_std": 0.2,
+          "dropout": 0.3
+        },
+        "cnn_lstm": {
+          "cnn_channels": [
+            16,
+            32
+          ],
+          "kernel_size": 5,
+          "pool_every": 1,
+          "rnn_type": "lstm",
+          "hidden_size": 64,
+          "num_layers": 1,
+          "bidirectional": true,
+          "dropout": 0.3
+        }
+      }
+    },
+    "ensemble": {
+      "strategies": [
+        "direct",
+        "dual",
+        "weighted"
+      ],
+      "weighted_r2_threshold": 0.0
+    },
+    "logging": {
+      "level": "INFO",
+      "console": true,
+      "file": "outputs/pipeline.log"
+    }
+  }
+}

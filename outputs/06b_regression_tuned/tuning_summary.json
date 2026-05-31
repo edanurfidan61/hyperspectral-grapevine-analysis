@@ -1,0 +1,435 @@
+{
+  "task": "regression",
+  "n_runs": 15,
+  "results": [
+    {
+      "task": "regression",
+      "model": "ridge",
+      "target": "chlorophyll",
+      "coarse": {
+        "best": {
+          "alpha": 100
+        },
+        "score": 0.8453588924922432,
+        "duration_s": 0.2
+      },
+      "fine": {
+        "best": {
+          "alpha": 100
+        },
+        "score": 0.8453588924922432,
+        "duration_s": 0.9
+      },
+      "final_metrics": {
+        "R2": 0.6895609147362207,
+        "RMSE": 5.182702452633042,
+        "RPD": 1.7947824014808194,
+        "MAPE": 27.378217852948822
+      }
+    },
+    {
+      "task": "regression",
+      "model": "random_forest",
+      "target": "chlorophyll",
+      "coarse": {
+        "best": {
+          "n_estimators": 300,
+          "min_samples_split": 2,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "max_depth": 10
+        },
+        "score": 0.8507876385699443,
+        "duration_s": 41.8
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 310,
+          "max_depth": 10,
+          "min_samples_split": 2,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt"
+        },
+        "score": 0.8508018627663001,
+        "duration_s": 29.1
+      },
+      "final_metrics": {
+        "R2": 0.8426595161386401,
+        "RMSE": 3.689676746380503,
+        "RPD": 2.5210401326409313,
+        "MAPE": 17.359543600053335
+      }
+    },
+    {
+      "task": "regression",
+      "model": "lightgbm",
+      "target": "chlorophyll",
+      "coarse": {
+        "best": {
+          "num_leaves": 63,
+          "n_estimators": 200,
+          "min_data_in_leaf": 20,
+          "learning_rate": 0.03,
+          "feature_fraction": 0.7
+        },
+        "score": 0.8378871410192067,
+        "duration_s": 101.6
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 212,
+          "learning_rate": 0.040759933042442575,
+          "num_leaves": 41,
+          "min_data_in_leaf": 19,
+          "feature_fraction": 0.8857751237459951
+        },
+        "score": 0.8387858094750188,
+        "duration_s": 31.2
+      },
+      "final_metrics": {
+        "R2": 0.8409666722045669,
+        "RMSE": 3.7094724659621656,
+        "RPD": 2.507586520576734,
+        "MAPE": 17.460669418659492
+      }
+    },
+    {
+      "task": "regression",
+      "model": "pls",
+      "target": "chlorophyll",
+      "coarse": {
+        "best": {
+          "n_components": 6
+        },
+        "score": 0.8525327750161941,
+        "duration_s": 1.1
+      },
+      "fine": {
+        "best": {
+          "n_components": 6
+        },
+        "score": 0.8525327750161941,
+        "duration_s": 1.5
+      },
+      "final_metrics": {
+        "R2": 0.8547886728147067,
+        "RMSE": 3.5446089183108165,
+        "RPD": 2.6242170486130942,
+        "MAPE": 16.697106057336942
+      }
+    },
+    {
+      "task": "regression",
+      "model": "huber",
+      "target": "chlorophyll",
+      "coarse": {
+        "best": {
+          "epsilon": 1.0,
+          "alpha": 0.1
+        },
+        "score": 0.7990076074341196,
+        "duration_s": 3.8
+      },
+      "fine": {
+        "best": {
+          "alpha": 0.07824598112857895,
+          "epsilon": 1.000685677125235
+        },
+        "score": 0.7820239588779281,
+        "duration_s": 8.3
+      },
+      "final_metrics": {
+        "R2": 0.7521981970845444,
+        "RMSE": 4.630419190748132,
+        "RPD": 2.008851201351897,
+        "MAPE": 24.65738575922871
+      }
+    },
+    {
+      "task": "regression",
+      "model": "ridge",
+      "target": "flavonol",
+      "coarse": {
+        "best": {
+          "alpha": 100
+        },
+        "score": 0.3812196598391989,
+        "duration_s": 0.3
+      },
+      "fine": {
+        "best": {
+          "alpha": 50
+        },
+        "score": 0.383172597796074,
+        "duration_s": 0.8
+      },
+      "final_metrics": {
+        "R2": 0.1437673456664429,
+        "RMSE": 0.5314317578556725,
+        "RPD": 1.0806974002007244,
+        "MAPE": 12.384189999582745
+      }
+    },
+    {
+      "task": "regression",
+      "model": "random_forest",
+      "target": "flavonol",
+      "coarse": {
+        "best": {
+          "n_estimators": 500,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": 0.5,
+          "max_depth": 15
+        },
+        "score": 0.3592532491060749,
+        "duration_s": 43.9
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 505,
+          "max_depth": null,
+          "min_samples_split": 5,
+          "min_samples_leaf": 3,
+          "max_features": 0.5
+        },
+        "score": 0.357056299950267,
+        "duration_s": 79.8
+      },
+      "final_metrics": {
+        "R2": 0.3704128050020462,
+        "RMSE": 0.4557005511017096,
+        "RPD": 1.2602945458596606,
+        "MAPE": 11.697182341320751
+      }
+    },
+    {
+      "task": "regression",
+      "model": "lightgbm",
+      "target": "flavonol",
+      "coarse": {
+        "best": {
+          "num_leaves": 31,
+          "n_estimators": 500,
+          "min_data_in_leaf": 20,
+          "learning_rate": 0.01,
+          "feature_fraction": 0.9
+        },
+        "score": 0.3837019070757039,
+        "duration_s": 102.3
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 303,
+          "learning_rate": 0.012254274513524913,
+          "num_leaves": 46,
+          "min_data_in_leaf": 20,
+          "feature_fraction": 0.8109617705683165
+        },
+        "score": 0.3902220660547967,
+        "duration_s": 47.0
+      },
+      "final_metrics": {
+        "R2": 0.3895061234898073,
+        "RMSE": 0.4487373993371109,
+        "RPD": 1.2798507990355281,
+        "MAPE": 11.756629032140577
+      }
+    },
+    {
+      "task": "regression",
+      "model": "pls",
+      "target": "flavonol",
+      "coarse": {
+        "best": {
+          "n_components": 15
+        },
+        "score": 0.3934981119655438,
+        "duration_s": 0.4
+      },
+      "fine": {
+        "best": {
+          "n_components": 15
+        },
+        "score": 0.3934981119655438,
+        "duration_s": 1.4
+      },
+      "final_metrics": {
+        "R2": 0.3800958828215939,
+        "RMSE": 0.4521826253037009,
+        "RPD": 1.270099484059114,
+        "MAPE": 11.36250443862587
+      }
+    },
+    {
+      "task": "regression",
+      "model": "huber",
+      "target": "flavonol",
+      "coarse": {
+        "best": {
+          "epsilon": 1.0,
+          "alpha": 0.0001
+        },
+        "score": -0.005854830636688147,
+        "duration_s": 4.0
+      },
+      "fine": {
+        "best": {
+          "alpha": 5.144636760478216e-05,
+          "epsilon": 1.0004800722212694
+        },
+        "score": 0.01484816257133308,
+        "duration_s": 8.4
+      },
+      "final_metrics": {
+        "R2": 0.21672826553924174,
+        "RMSE": 0.508285637239177,
+        "RPD": 1.129909792883795,
+        "MAPE": 12.208212736290482
+      }
+    },
+    {
+      "task": "regression",
+      "model": "ridge",
+      "target": "nbi",
+      "coarse": {
+        "best": {
+          "alpha": 100
+        },
+        "score": 0.7670330552464224,
+        "duration_s": 0.3
+      },
+      "fine": {
+        "best": {
+          "alpha": 100
+        },
+        "score": 0.7670330552464224,
+        "duration_s": 0.8
+      },
+      "final_metrics": {
+        "R2": 0.4997785427465823,
+        "RMSE": 2.3795870563945902,
+        "RPD": 1.4139004785200235,
+        "MAPE": 39.094541549716716
+      }
+    },
+    {
+      "task": "regression",
+      "model": "random_forest",
+      "target": "nbi",
+      "coarse": {
+        "best": {
+          "n_estimators": 300,
+          "min_samples_split": 5,
+          "min_samples_leaf": 1,
+          "max_features": 0.5,
+          "max_depth": null
+        },
+        "score": 0.7660790296559138,
+        "duration_s": 43.2
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 236,
+          "max_depth": 6,
+          "min_samples_split": 8,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt"
+        },
+        "score": 0.769748942348086,
+        "duration_s": 25.9
+      },
+      "final_metrics": {
+        "R2": 0.759401814958933,
+        "RMSE": 1.650314110011224,
+        "RPD": 2.0387023641781035,
+        "MAPE": 20.702554717785233
+      }
+    },
+    {
+      "task": "regression",
+      "model": "lightgbm",
+      "target": "nbi",
+      "coarse": {
+        "best": {
+          "num_leaves": 31,
+          "n_estimators": 500,
+          "min_data_in_leaf": 20,
+          "learning_rate": 0.01,
+          "feature_fraction": 0.9
+        },
+        "score": 0.7632960228003606,
+        "duration_s": 101.1
+      },
+      "fine": {
+        "best": {
+          "n_estimators": 345,
+          "learning_rate": 0.012194151595603529,
+          "num_leaves": 34,
+          "min_data_in_leaf": 20,
+          "feature_fraction": 0.8610664209290771
+        },
+        "score": 0.7661323167044555,
+        "duration_s": 45.7
+      },
+      "final_metrics": {
+        "R2": 0.7631631048426164,
+        "RMSE": 1.637363552831166,
+        "RPD": 2.0548272690562874,
+        "MAPE": 21.776282594531967
+      }
+    },
+    {
+      "task": "regression",
+      "model": "pls",
+      "target": "nbi",
+      "coarse": {
+        "best": {
+          "n_components": 6
+        },
+        "score": 0.7681540654003399,
+        "duration_s": 0.4
+      },
+      "fine": {
+        "best": {
+          "n_components": 6
+        },
+        "score": 0.7681540654003399,
+        "duration_s": 1.4
+      },
+      "final_metrics": {
+        "R2": 0.7643494494319814,
+        "RMSE": 1.6332575286665203,
+        "RPD": 2.0599931233522764,
+        "MAPE": 23.30976274114853
+      }
+    },
+    {
+      "task": "regression",
+      "model": "huber",
+      "target": "nbi",
+      "coarse": {
+        "best": {
+          "epsilon": 1.0,
+          "alpha": 0.1
+        },
+        "score": 0.568613075642117,
+        "duration_s": 4.0
+      },
+      "fine": {
+        "best": {
+          "alpha": 0.08961456118717422,
+          "epsilon": 1.000059716870636
+        },
+        "score": 0.4896324080901772,
+        "duration_s": 8.2
+      },
+      "final_metrics": {
+        "R2": 0.5049925642953372,
+        "RMSE": 2.3671528444588668,
+        "RPD": 1.4213274337532238,
+        "MAPE": 38.783517001051656
+      }
+    }
+  ]
+}

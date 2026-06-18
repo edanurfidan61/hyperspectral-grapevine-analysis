@@ -7,11 +7,16 @@ flavonol, NBI) and classifies **stress / disease state** (4 classes, incl.
 *flavescence dorée*) of grapevine (*Vitis vinifera*) leaves directly from
 **hyperspectral images** (204 bands, 397–1004 nm).
 
-**Biomedical motivation:** Grapevine leaf is a pharmacopoeial raw material
-(Ph.Eur.); leaf flavonoids are the active ingredient of venous-circulation drugs
-such as **Antistax®**, which require **flavonol ≥ 3.5%**. This project links three
-questions end-to-end: *detect the disease → measure its effect on flavonol →
-decide pass/fail (Ph.Eur.)* from a single hyperspectral scan.
+**Biomedical motivation:** Grapevine (red vine) leaf is a herbal drug raw
+material; leaf flavonoids are the active ingredient of venous-circulation drugs
+such as **Antistax®** (AS 195), which is based on the French Pharmacopoeia
+"Vigne Rouge" monograph and is authorised via the well-established-use (WEU) /
+traditional-use (TU) route — there is **no Ph.Eur. monograph**. The EMA
+assessment report (EMA/HMPC/464682/2016) reports a flavonoid level of ≈3.5% for
+red vine leaf, which we use as an **operational PASS/FAIL threshold**. This
+project links three questions end-to-end: *detect the disease → measure its
+effect on flavonol → decide pass/fail (EMA ≈3.5% threshold)* from a single
+hyperspectral scan.
 
 ---
 
@@ -24,11 +29,15 @@ eden hem de **stres/hastalık durumunu** (4 sınıf — sağlıklı, flavescence
 diğer biyotik, abiyotik) sınıflandıran uçtan uca bir makine öğrenmesi
 pipeline'ı.
 
-**Biyomedikal motivasyon:** Asma yaprağı Ph.Eur.'da kayıtlı bir ilaç
-hammaddesidir; **Antistax®** gibi ilaçların etken maddesi yaprak
-flavonoidleridir ve Ph.Eur. **flavonol ≥ %3.5** kalite şartı koyar. Proje
-üç soruyu birleştirir: *hastalığı tespit et → flavonole etkisini ölç → Ph.Eur.
-geçti/kaldı kararı ver.*
+**Biyomedikal motivasyon:** Kırmızı asma yaprağı bir bitkisel ilaç
+hammaddesidir; **Antistax®** (AS 195) gibi venöz dolaşım ilaçlarının etken
+maddesi yaprak flavonoidleridir. Antistax, Fransız Farmakopesi "Vigne Rouge"
+monografına dayanır ve iyi-yerleşmiş kullanım (WEU) / geleneksel kullanım (TU)
+üzerinden ruhsatlıdır; **Ph.Eur. monografı yoktur**. EMA değerlendirme raporu
+(EMA/HMPC/464682/2016) kırmızı asma yaprağı için ≈%3.5 flavonoid düzeyi
+bildirir; bunu **operasyonel PASS/FAIL eşiği** olarak kullanıyoruz. Proje
+üç soruyu birleştirir: *hastalığı tespit et → flavonole etkisini ölç → EMA
+≈%3.5 eşiğiyle geçti/kaldı kararı ver.*
 
 Ayrıntılı Türkçe raporlar: [`proje_ozeti.md`](proje_ozeti.md) (algoritma/akış
 odaklı) ve [`SONUC_OZETI.md`](SONUC_OZETI.md) (sonuç/tablo odaklı).
@@ -46,7 +55,7 @@ odaklı) ve [`SONUC_OZETI.md`](SONUC_OZETI.md) (sonuç/tablo odaklı).
 | Flavonol regression | LightGBM (tuned) | **R² ≈ 0.39** | Hard (weak UV-blue signal) |
 | Stress classification (4-class) | LightGBM (tuned) | **Acc 0.80 / Macro-F1 0.77** | |
 | **Flavescence dorée (FD) detection** | LightGBM | **Recall 0.89 / F1 0.85** | Disease is clearly detectable |
-| Pass/Fail (Ph.Eur. ≥3.5) | SVM | **Acc 0.76** | FAIL recall 0.87 |
+| Pass/Fail (EMA ≈3.5% threshold) | SVM | **Acc 0.76** | FAIL recall 0.87 |
 
 **🔬 Headline finding:** Flavescence dorée disease does **not lower** flavonol —
 it **raises** it (FD mean 3.51 vs healthy 3.27; %56 pass vs %30). Flavonoids are
@@ -87,7 +96,9 @@ python run_all.py --quick          # small subset, fast smoke test
 ## 📦 Data / Veri
 
 This repo ships the **processed dataset** so you can reproduce all modelling
-without the 42 GB of raw ENVI cubes:
+without the 42 GB of raw ENVI cubes. The raw dataset contains **205 leaves**;
+one is dropped because its segmentation mask comes back empty, so all modelling
+runs on **204 leaves**.
 
 | Included in repo | Path | Size |
 |---|---|---|
@@ -154,7 +165,7 @@ outputs/
 ├── 02_eda/  03_visualization/  EDA; per-leaf maps (03 git-ignored, 530 MB)
 ├── 04_feature_shap/ 05_feature_rfe/ 05b_pls_vip/   feature importance
 ├── 06_regression/ 06b_regression_tuned/            6 regressors + tuning
-├── 07_classification(_resampled)/ 07b_..._tuned/   4-class + Ph.Eur. binary
+├── 07_classification(_resampled)/ 07b_..._tuned/   4-class + flavonoid PASS/FAIL binary (EMA ≈3.5%)
 ├── 08_deep_learning/           7 architectures
 ├── 09_ordinal_flavonol/ 10_anomaly_flavonol/ 11_ensemble/
 ├── 12_ga_feature_selection/ 12b_..._consensus/     GA bands + wavelengths

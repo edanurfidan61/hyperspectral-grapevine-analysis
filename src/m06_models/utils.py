@@ -59,7 +59,7 @@ def apply_smote_tomek(
     -----
     - ``k_neighbors`` dinamik seçilir:
       ``min_count = en küçük sınıf - 1; k = max(1, min(5, min_count))``.
-      Bu, mildew (2 örnek) gibi çok küçük sınıflarda SMOTE'un kırılmasını önler.
+      Bu, mildiyö / downy mildew (2 örnek) gibi çok küçük sınıflarda SMOTE'un kırılmasını önler.
     - Bir sınıfta 1 örnek varsa SMOTE skip edilir (en az 2 örnek gerekir);
       orijinal X,y döner, uyarı log'lanır.
     """
@@ -189,7 +189,11 @@ def classify_metrics(
 
 
 def pheur_pass_fail(y_flav: np.ndarray, threshold: float = 3.5) -> np.ndarray:
-    """Ph.Eur. flavonol eşiği: ``y_flav >= threshold`` → 1 (PASS), aksi 0 (FAIL)."""
+    """Flavonoid PASS/FAIL eşiği: ``y_flav >= threshold`` → 1 (PASS), aksi 0 (FAIL).
+
+    NOT: 'pheur' tarihsel değişken/fonksiyon adıdır; ≈%3.5 eşiği EMA değerlendirme
+    raporundan (EMA/HMPC/464682/2016) gelir — Ph.Eur. kalite şartı DEĞİLDİR.
+    """
     return (np.asarray(y_flav) >= threshold).astype(int)
 
 

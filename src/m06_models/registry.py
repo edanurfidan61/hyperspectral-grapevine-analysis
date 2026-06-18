@@ -220,7 +220,8 @@ def run_all(cfg, task: str) -> dict[str, Any]:
                 except Exception as exc:
                     log.exception("HATA %s/%s: %s", model_name, target_name, exc)
 
-        # Ph.Eur. binary — sadece klasik aşamada
+        # Flavonoid PASS/FAIL binary — sadece klasik aşamada
+        # NOT: 'pheur' tarihsel değişken adıdır; eşik EMA/HMPC/464682/2016'dan gelir.
         if task == "classification" and "pheur" in models_dict:
             try:
                 threshold = float(cfg.get("targets.pheur_flavonol_threshold", 3.5))

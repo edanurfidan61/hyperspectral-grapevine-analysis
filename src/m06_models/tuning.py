@@ -241,7 +241,8 @@ def run(cfg, task: str) -> dict[str, Any]:
                 except Exception as exc:
                     log.exception("Tuning HATA %s/%s: %s", model_name, target_name, exc)
 
-        # Ph.Eur. binary (SVC) — y_flav eşikten
+        # Flavonoid PASS/FAIL binary (SVC) — y_flav eşikten
+        # NOT: 'pheur' tarihsel değişken adıdır; eşik EMA/HMPC/464682/2016'dan gelir.
         if "pheur" in MODELS_CLASSIFICATION:
             try:
                 threshold = float(cfg.get("targets.pheur_flavonol_threshold", 3.5))

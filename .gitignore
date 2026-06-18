@@ -51,6 +51,9 @@ memory/
 *.swp
 *~
 
+# ── Kaggle yükleme staging (yerel; Kaggle'a özgü) ───────────────────────
+kaggle_upload/
+
 # ── OS ──────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db

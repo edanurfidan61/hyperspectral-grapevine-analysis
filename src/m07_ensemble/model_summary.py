@@ -44,7 +44,7 @@ _TARGET_LABELS = {
     "flavonol": "Flavonol",
     "nbi": "NBI",
     "stress": "4 Sınıf (Sağlıklı/FD/Biyotik/Abiyotik)",
-    "flavonol_pheur": "Ph.Eur. Flavonol ≥3.5 (binary)",
+    "flavonol_pheur": "EMA ≈%3.5 Flavonoid (binary PASS/FAIL)",
 }
 
 _STAGE_LABELS = {
@@ -87,7 +87,7 @@ def _model_note(stage: str, model: str, target: str) -> str:
         ("07_Stres_Siniflandirma", "lightgbm"): "Dengesiz sınıflar için class_weight + boosting",
         ("07_Stres_Siniflandirma", "stacking"): "RF + LightGBM → Logistic meta",
         ("07_Stres_Siniflandirma", "pheur"): "MLP (DL) — spektral feature → dense ağa",
-        ("07_Stres_Siniflandirma", "pheur_binary"): "Flavonol ≥3.5 PASS/FAIL — kalite kontrol",
+        ("07_Stres_Siniflandirma", "pheur_binary"): "Flavonoid ≥3.5 PASS/FAIL — EMA raporu (≈%3.5) operasyonel eşiği",
         ("08_Derin_Ogrenme", "mlp"): "En basit DL; spektral feature → dense",
         ("08_Derin_Ogrenme", "autoencoder"): "Unsupervised pretrain; gürültüden temiz temsil",
         ("08_Derin_Ogrenme", "resnet1d"): "Skip connection ile derin spektral öğrenme",
@@ -328,7 +328,7 @@ def _scan_anomaly() -> list[dict]:
         det = str(r.get("detector"))
         rows.append({
             "Aşama": stage_label,
-            "Hedef": "Ph.Eur. Anomali (Flavonol ≥3.5)",
+            "Hedef": "Flavonoid Anomali (EMA ≈%3.5 eşiği)",
             "Model": det,
             "R²": np.nan,
             "Accuracy": np.nan,

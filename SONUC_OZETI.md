@@ -9,16 +9,19 @@
 
 ## 0. PROJENİN AMACI VE ANA SORU
 
-**Biyomedikal motivasyon:** Asma yaprağı (*Vitis vinifera*), Avrupa Farmakopesi'nde
-(Ph.Eur.) kayıtlı bir ilaç hammaddesidir; **Antistax®** gibi venöz dolaşım
-ilaçlarının etken maddesi yaprak flavonoidleridir. Ph.Eur. monografı, kuru yaprakta
-**flavonol içeriğinin ≥ %3.5** olmasını kalite şartı olarak koyar.
+**Biyomedikal motivasyon:** Kırmızı asma yaprağı (*Vitis vinifera*) bir bitkisel
+ilaç hammaddesidir; **Antistax®** (AS 195) gibi venöz dolaşım ilaçlarının etken
+maddesi yaprak flavonoidleridir. Antistax, Fransız Farmakopesi "Vigne Rouge"
+monografına dayanır ve WEU/TU üzerinden ruhsatlıdır; **Ph.Eur. monografı yoktur**.
+EMA değerlendirme raporu (EMA/HMPC/464682/2016) kırmızı asma yaprağı için ≈%3.5
+flavonoid düzeyi bildirir; bu çalışmada bunu **operasyonel PASS/FAIL eşiği** olarak
+kullanıyoruz.
 
 **Ana araştırma soruları:**
 1. Yapraktaki **stres/hastalık durumu** hiperspektral görüntüden tespit edilebilir mi?
    (özellikle *flavescence dorée* — FD, ekonomik açıdan en yıkıcı asma hastalığı)
 2. Stres/hastalık, **ilaç hammaddesi olan flavonol içeriğini** nasıl etkiler?
-3. Yaprak, Ph.Eur. eşiğini (flavonol ≥ %3.5) **geçer mi/kalır mı** — yani ilaç
+3. Yaprak, EMA raporundaki ≈%3.5 flavonoid düzeyini (operasyonel eşik) **geçer mi/kalır mı** — yani ilaç
    hammaddesi olarak kullanılabilir mi — hiperspektral görüntüden tahmin edilebilir mi?
 4. Yan hedef: Klorofil ve NBI (Nitrogen Balance Index) gibi diğer biyokimyasal
    parametreler ne kadar iyi tahmin edilebilir? (yöntemin genel geçerliliği)
@@ -36,7 +39,7 @@ ama *eşik geçişi* (asıl pratik hedef) çalışıyor.
 | Özellik | Değer |
 |---|---|
 | Kaynak | Ryckewaert et al. hiperspektral asma yaprağı veri seti |
-| Örnek sayısı | **204 yaprak görüntüsü** |
+| Örnek sayısı | **205 ham yaprak görüntüsü**; 1'i segmentasyon maskesi boş döndüğü için elenir → **204 ile çalışılır** |
 | Grup yapısı | İki düzey mevcut: (a) **leaf** = her görüntü bağımsız (204 benzersiz; aktif CV anahtarı) → grup-bilinçli CV bu düzeyde stratified k-fold ile eşdeğer çalışır; (b) **plot** = çeşit\|lokasyon\|tarih düzeyinde **10 grup** (en büyüğü 25 görüntü). Leakage'a karşı en katı test plot düzeyindedir; altyapı her ikisini de destekler. |
 | Spektral bantlar | **204 bant, 397–1004 nm** (VNIR) |
 | Format | ENVI hiperspektral küp |
@@ -50,7 +53,7 @@ ama *eşik geçişi* (asıl pratik hedef) çalışıyor.
 | **Flavonol (Flav)** | 204 | **3.35** | **0.57** | 1.31 | 4.49 | **İlaç hammaddesi — ana hedef** |
 | NBI | 204 | 6.57 | 3.36 | 0.84 | 16.75 | Azot dengesi indeksi (Chl/Flav) |
 
-> Not: Flavonol ortalaması 3.35, Ph.Eur. eşiği 3.5'in hemen altında → veri seti
+> Not: Flavonol ortalaması 3.35, EMA raporundaki ≈%3.5 eşiğin hemen altında → veri seti
 > eşiğin etrafında dengeli dağılmış (**geçer 87/204 = %42.6, kalır 117/204 = %57.4**).
 > Bu, eşik sınıflandırması için ideal bir zorluk seviyesidir (sınıflar dengeli).
 
@@ -59,7 +62,7 @@ ama *eşik geçişi* (asıl pratik hedef) çalışıyor.
 |---|---|---|---|
 | 0 | Sağlıklı | 40 | Belirti yok |
 | **1** | **Flavescence dorée (FD)** | **80** | Fitoplazma hastalığı — tezin merkezi |
-| 2 | Diğer biyotik | 56 | Yeşil yaprakzararlısı, küf, odun hastalıkları vb. |
+| 2 | Diğer biyotik | 56 | Yeşil yaprak zikadası (*Empoasca vitis*), buffalo zikadası (*Stictocephala bisonia*), odun hastalıkları ve mildiyö / downy mildew (*Plasmopara viticola*, 2 örnek). Külleme (powdery mildew) YOK. |
 | 3 | Abiyotik / diğer | 28 | Su stresi, senesans, hasar, eksiklik |
 
 > **KRİTİK METODOLOJİK NOT:** İlk çalıştırmalarda FD sınıfı (80 örnek) **tamamen
@@ -196,7 +199,7 @@ gerçek abiyotik            5        5   4       14
 ### 3.2 SORU 2 — Hastalık → İlaç Hammaddesi İlişkisi ✅ KURULDU (ANA BULGU)
 
 **Stres sınıfına göre flavonol içeriği:**
-| Stres sınıfı | n | Flavonol ort. | Ph.Eur. geçme oranı (≥3.5) |
+| Stres sınıfı | n | Flavonol ort. | EMA ≈3.5 geçme oranı (≥3.5) |
 |---|---|---|---|
 | Sağlıklı | 40 | 3.27 | %30 (12/40) |
 | **FD (hasta)** | 80 | **3.51** | **%56 (45/80)** |
@@ -205,7 +208,7 @@ gerçek abiyotik            5        5   4       14
 
 **🔑 EN ÖNEMLİ BULGU:** **FD hastalığı flavonol içeriğini DÜŞÜRMÜYOR, AKSİNE
 ARTIRIYOR.** FD'li yaprakların ortalama flavonolü 3.51 (sağlıklının 3.27'sinin
-üzerinde) ve %56'sı Ph.Eur. eşiğini geçiyor (sağlıklıda yalnızca %30).
+üzerinde) ve %56'sı EMA raporundaki ≈%3.5 eşiği geçiyor (sağlıklıda yalnızca %30).
 
 **Biyolojik açıklama:** Flavonoidler bitkilerde **savunma/stres bileşikleridir**
 (UV koruma, antioksidan, patojen savunması). Bitki FD fitoplazmasının saldırısına
@@ -219,7 +222,7 @@ hammadde kalitesinin önceden kestirilebileceğini kanıtlar.
 
 ---
 
-### 3.3 SORU 3 — Geçti/Kaldı Sınıflandırması (Ph.Eur. ≥ 3.5) ✅ ORTA-İYİ
+### 3.3 SORU 3 — Geçti/Kaldı Sınıflandırması (EMA ≈%3.5 eşiği) ✅ ORTA-İYİ
 
 **Model: pheur_binary (SVM), flavonol ≥ 3.5 ikili sınıflandırma**
 - Accuracy: **0.765**, Macro-F1: **0.751**, Balanced Acc: 0.746
@@ -411,7 +414,7 @@ Flavonolü sıralı sınıflara (düşük/orta/yüksek) bölme:
 
 → QWK ≈ 0.50 = orta düzey sıralı uyum. Tam regresyondan daha kararlı ama kaba.
 
-### 6.2 Anomali tespiti (10) — Ph.Eur. eşiği aşımı anomali olarak
+### 6.2 Anomali tespiti (10) — EMA ≈%3.5 eşiği aşımı anomali olarak
 | Model | Precision | Recall | F1 |
 |---|---|---|---|
 | One-Class SVM | 0.588 | **0.974** | 0.733 |
@@ -445,7 +448,7 @@ kaçırma" senaryosu için uygun.
 Hiperspektral spektrum
    → Hastalık tespiti (FD recall %89, genel acc %80)
    → Hastalığın flavonolü ARTIRDIĞI gösterildi (FD %56 geçer vs sağlıklı %30)
-   → Geçti/Kaldı kararı (Ph.Eur. ≥3.5, acc %76, KALDI recall %87)
+   → Geçti/Kaldı kararı (EMA ≈%3.5 eşiği, acc %76, KALDI recall %87)
 ```
 
 ### 7.2 Güçlü yönler (tezde öne çıkar)

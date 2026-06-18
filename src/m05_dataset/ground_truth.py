@@ -11,7 +11,10 @@ DÜZELTME (v2):
 - Stres etiket şeması gerçek symptom değerleriyle güncellendi:
     0 = healthy
     1 = flavescence dorée  (FD — biyotik hastalık, Antistax bağlantısı)
-    2 = diğer biyotik stres (green leafhopper, buffalo treehopper, wood diseases, mildew)
+    2 = diğer biyotik stres (yeşil yaprak zikadası / green leafhopper [Empoasca vitis],
+        buffalo zikadası / buffalo treehopper [Stictocephala bisonia], odun hastalıkları
+        / wood diseases ve mildiyö / downy mildew [Plasmopara viticola]) — toplam 56 örnek.
+        NOT: bu veri setinde külleme (powdery mildew) YOKTUR; "mildew" = mildiyö (downy mildew).
     3 = abiyotik / diğer   (water stress, senescence, damaged, deficiency, vb.)
 """
 
@@ -35,7 +38,8 @@ _NBI_ALIASES = ("NBI", "nbi", "NitrogenBalanceIndex")
 
 # Gerçek symptom → sınıf eşlemesi
 # Sınıf 0: Sağlıklı
-# Sınıf 1: Flavescence dorée (FD) — Antistax/Ph.Eur. bağlantısı için merkezi sınıf
+# Sınıf 1: Flavescence dorée (FD) — Antistax / EMA değerlendirme raporu
+#          (EMA/HMPC/464682/2016) bağlantısı için merkezi sınıf
 # Sınıf 2: Diğer biyotik stres
 # Sınıf 3: Abiyotik / belirsiz
 _SYMPTOM_TO_CLASS: dict[str, int] = {
@@ -47,7 +51,7 @@ _SYMPTOM_TO_CLASS: dict[str, int] = {
     "green leafhopper": 2,
     "buffalo treehopper": 2,
     "wood diseases": 2,
-    "mildew": 2,
+    "mildew": 2,  # mildiyö / downy mildew (Plasmopara viticola, 2 örnek) — külleme DEĞİL
     # Abiyotik / diğer
     "water stress": 3,
     "senescence": 3,
@@ -249,8 +253,10 @@ def assign_stress_labels_from_ground_truth(
 
     Sınıf şeması:
         0 = sağlıklı (healthy)
-        1 = flavescence dorée — FD (Antistax/Ph.Eur. bağlantısı)
-        2 = diğer biyotik stres (leafhopper, treehopper, wood diseases, mildew)
+        1 = flavescence dorée — FD (Antistax / EMA değerlendirme raporu bağlantısı)
+        2 = diğer biyotik stres — yeşil yaprak zikadası (Empoasca vitis), buffalo
+            zikadası (Stictocephala bisonia), odun hastalıkları ve mildiyö / downy
+            mildew (Plasmopara viticola); toplam 56 örnek. (külleme/powdery mildew YOK)
         3 = abiyotik / diğer (water stress, senescence, damaged, deficiency, vb.)
 
     Bu şema şunları garanti eder:

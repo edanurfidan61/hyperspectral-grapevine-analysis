@@ -1,4 +1,8 @@
-"""Ph.Eur.-style binary classifier wrapper (kayıt: 'pheur').
+"""Flavonoid PASS/FAIL binary classifier wrapper (kayıt: 'pheur').
+
+PASS/FAIL eşiği EMA değerlendirme raporundaki ≈%3.5 flavonoid düzeyine dayanır
+(EMA/HMPC/464682/2016) — Ph.Eur. kalite şartı DEĞİLDİR. 'pheur' tarihsel
+değişken/kayıt adıdır; kodu kırmamak için korunmuştur.
 
 SVM-RBF parametreleri konfigürasyondan alınır (varsayılan C=1.0, gamma='scale').
 """

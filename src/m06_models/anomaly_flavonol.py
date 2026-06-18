@@ -1,6 +1,7 @@
 """Flavonol kalite kontrolü için anomali tespiti.
 
-"Normal" tanım: y_stress == 0 (sağlıklı) ve y_flav >= 3.5 (Ph.Eur. PASS).
+"Normal" tanım: y_stress == 0 (sağlıklı) ve y_flav >= 3.5 (EMA raporundaki ≈%3.5
+flavonoid düzeyi — operasyonel PASS eşiği; EMA/HMPC/464682/2016).
 Dedektörler yalnız normal örneklerle eğitilir; sonra 204 yaprağın tamamında
 değerlendirilir. Anomaly = y_flav < 3.5.
 
@@ -43,6 +44,7 @@ from src.core.logging_setup import get as get_logger
 
 log = get_logger("m06_models.anomaly_flavonol")
 
+# NOT: 'PHEUR' tarihsel değişken adıdır; ≈%3.5 eşik EMA/HMPC/464682/2016'dan gelir.
 PHEUR_THRESHOLD = 3.5
 
 

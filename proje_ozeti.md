@@ -15,14 +15,10 @@ Proje, **asma yaprağının (*Vitis vinifera*) hiperspektral görüntüsünden**
 **stres/hastalık durumunu** sınıflandıran uçtan uca bir makine öğrenmesi
 pipeline'ıdır.
 
-**Biyomedikal motivasyon:** Asma yaprağı, Avrupa Farmakopesi'nde (Ph.Eur.) kayıtlı
-bir ilaç hammaddesidir; **Antistax®** gibi venöz dolaşım ilaçlarının etken maddesi
-yaprak flavonoidleridir. Ph.Eur., kuru yaprakta **flavonol ≥ %3.5** olmasını kalite
-şartı koyar. Ayrıca **flavescence dorée (FD)**, asmanın ekonomik açıdan en yıkıcı
-fitoplazma hastalığıdır. Proje bu iki ekseni birleştirir: hastalığı tespit et →
-hastalığın ilaç hammaddesine etkisini ölç → "geçti/kaldı" kararı ver.
+**Biyomedikal motivasyon:** 
+ Asma yaprağı, geleneksel bitkisel tıbbi ürünlerde kullanılan bir ilaç hammaddesidir; Antistax® gibi kronik venöz yetmezlik ilaçlarının etken maddesi yaprak flavonoidleridir. EMA değerlendirme raporu (EMA/HMPC/464682/2016), kırmızı asma yaprağında flavonoid içeriğini en fazla %3.5 olarak bildirir; bu çalışmada söz konusu değer, hammadde uygunluğu için operasyonel bir PASS/FAIL eşiği olarak benimsenmiştir. Ayrıca flavescence dorée (FD), asmanın ekonomik açıdan en yıkıcı fitoplazma hastalığıdır. Proje bu iki ekseni birleştirir: hastalığı tespit et → hastalığın ilaç hammaddesine etkisini ölç → "geçti/kaldı" kararı ver.
 
-**Veri:** 204 yaprak görüntüsü, 204 spektral bant (397–1004 nm, VNIR), ENVI küp.
+**Veri:** 205 ham yaprak görüntüsü; 1'i segmentasyon maskesi boş döndüğü için elenir → 204 ile çalışılır. 204 spektral bant (397–1004 nm, VNIR), ENVI küp.
 **Temel kısıt:** Küçük örneklem (n=204) + yüksek boyut → aşırı uydurma (overfitting)
 riski tüm tasarım kararlarının merkezindedir.
 
@@ -177,8 +173,10 @@ fine_best_params.json  ──►  12/13/16 aşamaları bu HP'leri yeniden kullan
 
 ## Aşama 07 / 07b — Stres Sınıflandırması (4 GERÇEK sınıf)
 
-**Sınıflar:** 0=sağlıklı (40), **1=flavescence dorée/FD (80)**, 2=diğer biyotik (56),
-3=abiyotik (28).
+**Sınıflar:** 0=sağlıklı (40), **1=flavescence dorée/FD (80)**, 2=diğer biyotik (56;
+yeşil yaprak zikadası *Empoasca vitis*, buffalo zikadası *Stictocephala bisonia*,
+odun hastalıkları ve mildiyö / downy mildew *Plasmopara viticola* — külleme/powdery
+mildew YOK), 3=abiyotik (28).
 
 **Algoritma kullanımı — sınıf dengesizliği zinciri:**
 ```
@@ -235,7 +233,7 @@ stratejisiyle. Burada DL bir **üst-sınır referansı** olarak konumlanır, ana
 
 Flavonol regresyonu ~0.39'da tıkandığı için **sıra bilgisini** (düşük<orta<yüksek<PASS)
 kullanan **Frank-Hall ordinal** yaklaşımı + RF/LightGBM denenir. Pratik gerekçe:
-Ph.Eur. kararı için kesin değil, banda ihtiyaç var.
+EMA ≈%3.5 eşiği (geçti/kaldı) kararı için kesin değil, bant bilgisine ihtiyaç var.
 
 **Sonuç:** En iyi RF, 3-sınıf Acc 0.691, **QWK (Quadratic Weighted Kappa) 0.508** —
 orta düzey sıralı uyum. MAE 0.314.
@@ -245,7 +243,7 @@ orta düzey sıralı uyum. MAE 0.314.
 
 ---
 
-## Aşama 10 — Ph.Eur. Anomali Tespiti (`anomaly_flavonol.py`)
+## Aşama 10 — Flavonol Anomali Tespiti (`anomaly_flavonol.py`)
 
 İlaç kalite kontrolü perspektifi: "normal" = kabul edilebilir hammadde, "anomali" =
 şüpheli. **Tek-sınıflı öğrenme** (one-class) — anomali örneği etiketlemeye gerek yok.
@@ -378,7 +376,7 @@ held-out'ta ölçmek → selection bias'ı yok etmek.
 ```
 Spektrum → Hastalık tespiti (FD recall %89, genel acc %80)
         → Hastalığın flavonolü ARTIRdığı gösterildi (FD %56 geçer vs sağlıklı %30)
-        → Geçti/Kaldı kararı (Ph.Eur. ≥3.5: acc %76, KALDI recall %87)
+        → Geçti/Kaldı kararı (EMA eşiği %3.5: acc %76, KALDI recall %87)
 ```
 
 ### En önemli bilimsel bulgu
@@ -415,7 +413,7 @@ artışı (selection bias); RNN/Transformer (küçük veri); abiyotik sınıf (2
 05_feature_rfe              → RFE alt küme
 05b_pls_vip                 → PLS-VIP önemleri
 06_regression               → PLS, Ridge, RF, LightGBM, Huber, Stacking
-07_classification           → 4 sınıf + Ph.Eur. binary (SMOTE+Tomek)
+07_classification           → 4 sınıf + flavonoid PASS/FAIL binary (EMA ≈%3.5, SMOTE+Tomek)
 06b_regression_tuned        → RandomizedSearch + Optuna
 07b_classification_tuned    → RandomizedSearch + Optuna
 08_deep_learning            → MLP, CNN1D, ResNet1D, RNN, Transformer, CNN-LSTM, Autoencoder
@@ -444,7 +442,7 @@ artışı (selection bias); RNN/Transformer (küçük veri); abiyotik sınıf (2
 > dorée %89 duyarlılıkla** tespit edildi.
 >
 > **En önemli bulgu:** FD hastalığı flavonolü artırıyor (geçme %56 vs sağlıklı %30) —
-> hastalıklı yaprak daha değerli ilaç hammaddesi olabilir. **Geçti/kaldı kararı (Ph.Eur.
+> hastalıklı yaprak daha değerli ilaç hammaddesi olabilir. **Geçti/kaldı kararı (EMA Eşiği
 > ≥3.5) %76 doğrulukla** veriliyor.
 >
 > **Metodolojik katkı:** Genetik algoritmanın görünür R² artışının (0.64) **selection

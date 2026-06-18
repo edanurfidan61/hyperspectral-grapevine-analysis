@@ -3,11 +3,11 @@
 Mevcut regression/classification pipeline'a ek olarak çalışır; çıktıları
 ``outputs/09_ordinal_flavonol/ordinal_flavonol_report.csv`` altına yazar.
 
-Sınıf tanımları (Ph.Eur. eşiği = 3.5):
+Sınıf tanımları (EMA raporundaki ≈%3.5 flavonoid düzeyi, operasyonel eşik = 3.5):
     0: flav < 1.5            (low)
     1: 1.5 <= flav < 2.5     (medium)
     2: 2.5 <= flav < 3.5     (high)
-    3: flav >= 3.5           (Ph.Eur. PASS)
+    3: flav >= 3.5           (PASS — EMA/HMPC/464682/2016 ≈%3.5 düzeyi)
 
 Eğitilen sınıflandırıcılar (5-fold stratified CV):
     - RandomForestClassifier
